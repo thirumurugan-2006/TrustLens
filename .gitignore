@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML / model files
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+models/
+checkpoints/
+
+# Data
+data/
+datasets/
+*.csv
+*.json
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+
+# Temporary
+tmp/
+temp/
