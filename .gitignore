@@ -1,32 +1,34 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual Environments
 .venv/
 venv/
 env/
+ENV/
 
-# Environment / secrets
+# Environment / Secrets
 .env
 .env.*
 !.env.example
 
-# Jupyter
-.ipynb_checkpoints/
-
-# ML / model files
+# Model Checkpoints (weights excluded, preserving directory structure)
 *.pt
 *.pth
 *.onnx
 *.safetensors
 *.bin
-models/
 checkpoints/
-
-# Data
-data/
-datasets/
-*.csv
-*.json
 
 # Logs
 logs/
@@ -36,7 +38,7 @@ logs/
 .vscode/
 .idea/
 
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
 
@@ -46,6 +48,10 @@ node_modules/
 dist/
 build/
 
-# Temporary
+# Temporary files
 tmp/
 temp/
+*.tmp
+*.temp
+*.swp
+*.bak

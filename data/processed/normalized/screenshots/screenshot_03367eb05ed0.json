@@ -1,0 +1,18 @@
+{
+    "post_id": "screenshot_03367eb05ed0",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Screenshot text",
+    "images": [
+        "data/raw/screenshots/screenshot_03367eb05ed0.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T04:45:34.583386+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.95
+    }
+}

@@ -128,19 +128,20 @@ class RuleBasedDecomposer:
 
         return AtomicClaim(
             parent_claim_id=claim.claim_id,
-            text=text,
+            original_text=claim.text,
+            normalized_text=text,
             subject=subject,
             predicate=predicate,
             object=obj,
             value=value,
             unit=unit,
             currency=currency,
-            claim_type=claim.claim_type,
             polarity=polarity,
             negated=is_negated,
             temporal_context=temporal,
             language=claim.language,
             verifiable=claim.verifiable,
+            claim_type=claim.claim_type,
             source_span=claim.source_span,
             metadata=claim.metadata
         )
@@ -148,7 +149,7 @@ class RuleBasedDecomposer:
     def _parse_conditional(self, claim: Claim) -> List[AtomicClaim]:
         # Simple extraction for "If you invest X today, you will receive Y within Z days" or Hindi equivalent
         text = claim.text
-        m_en = re.search(r"(?i)if\s+(?:you\s+)?invest\s+(.*?)\s+(today|tomorrow).*?receive\s+(.*?)\s+(within\s+\d+\s+days|after\s+\d+\s+days)", text)
+        m_en = re.search(r"(?i)(?:if\s+(?:you\s+)?)?invest\s+(.*?)\s+(today|tomorrow).*?receive\s+(.*?)\s+(within\s+\d+\s+days|after\s+\d+\s+days)", text)
         m_hi = re.search(r"(आज|today)\s+(₹[\d,]+)\s*(?:निवेश करने पर|invest).*?(\d+\s*दिनों के भीतर|within \d+ days)\s+(₹[\d,]+)", text, re.IGNORECASE)
         
         invest_amount, invest_time, receive_amount, receive_time = None, None, None, None
@@ -165,14 +166,15 @@ class RuleBasedDecomposer:
             
             cond_ac = AtomicClaim(
                 parent_claim_id=claim.claim_id,
-                text=text,
+                original_text=claim.text,
+                normalized_text=text,
                 subject="investor",
-                predicate="invest",
+                predicate="invests",
                 object=invest_amount,
                 value=inv_val,
                 currency="INR" if "₹" in invest_amount else None,
-                claim_type=claim.claim_type,
                 temporal_context={"type": "date", "value": invest_time},
+                claim_type=claim.claim_type,
                 language=claim.language,
                 verifiable=claim.verifiable,
                 source_span=claim.source_span
@@ -180,21 +182,22 @@ class RuleBasedDecomposer:
             
             out_ac = AtomicClaim(
                 parent_claim_id=claim.claim_id,
-                text=text,
+                original_text=claim.text,
+                normalized_text=text,
                 subject="investor",
-                predicate="receive",
+                predicate="receives",
                 object=receive_amount,
                 value=rec_val,
                 currency="INR" if "₹" in receive_amount else None,
-                claim_type=claim.claim_type,
                 temporal_context={"type": "deadline", "value": receive_time},
+                claim_type=claim.claim_type,
                 language=claim.language,
                 verifiable=claim.verifiable,
                 source_span=claim.source_span
             )
             
-            cond_ac.metadata["relationship"] = "condition -> outcome"
-            out_ac.metadata["relationship"] = "condition -> outcome"
+            cond_ac.relationships.append({"target": out_ac.atomic_claim_id, "type": "promised_outcome"})
+            cond_ac.conditions = {"condition": "invests", "target": out_ac.atomic_claim_id}
             
             return [cond_ac, out_ac]
         return []
@@ -206,7 +209,7 @@ class RuleBasedDecomposer:
         # Actually, to keep it simple, we let the class hold the state across a post.
         
         # Check conditional
-        if (re.search(r"(?i)\bif\b", text) and "receive" in text.lower()) or "निवेश करने पर" in text or "invest பண்ணினால்" in text.lower():
+        if ("invest" in text.lower() and "receive" in text.lower()) or "निवेश करने पर" in text or "invest பண்ணினால்" in text.lower():
             ac_list = self._parse_conditional(claim)
             if ac_list:
                 return DecomposedClaim(

@@ -1,6 +1,6 @@
 import pytest
 from app.claims.extractor import RuleBasedClaimExtractor
-from app.input.schemas import NormalizedPost
+from app.input.schemas import NormalizedPost, Platform, PostType, AuthorInfo, PostContent, PostMedia
 
 @pytest.fixture
 def extractor():
@@ -9,12 +9,12 @@ def extractor():
 def make_post(text: str) -> NormalizedPost:
     return NormalizedPost(
         post_id="test_post",
-        platform="test",
+        platform=Platform.generic,
+        post_type=PostType.text,
+        content=PostContent(text=text if text is not None else ""),
+        media=PostMedia(),
         source_url="http://test",
-        author="test",
-        title="test",
-        text=text,
-        images=[],
+        author=AuthorInfo(),
         comments=[],
         timestamp="2023-01-01T00:00:00Z",
         metadata={"language_analysis": {"primary_language": "en"}}

@@ -1,0 +1,16 @@
+{
+  "total_neutral_evidence": 180,
+  "language_distribution": {
+    "en": 60,
+    "ta": 30,
+    "hi": 30,
+    "ta-en": 30,
+    "hi-en": 30
+  },
+  "split_distribution": {
+    "train": 120,
+    "validation": 30,
+    "test": 30
+  },
+  "criteria_compliance": "Evidence is relevant to entity/topic but non-diagnostic regarding specific claim truth."
+}

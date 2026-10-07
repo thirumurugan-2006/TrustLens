@@ -1,0 +1,26 @@
+{
+    "post_id": "screenshot_42b1cbb23da5",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Congratulations! Pay registration fee.",
+    "images": [
+        "data/raw/screenshots/screenshot_42b1cbb23da5.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T04:46:51.207969+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.8500000000000001,
+        "ocr_quality": "high",
+        "ocr_warning": false,
+        "quality_score": 0.8500000000000001,
+        "quality_level": "high",
+        "image_format": "PNG",
+        "image_width": 200,
+        "image_height": 80,
+        "image_size_bytes": 288
+    }
+}

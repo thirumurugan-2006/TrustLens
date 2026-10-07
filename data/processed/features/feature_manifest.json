@@ -1,0 +1,755 @@
+{
+  "manifest_version": "1.0.0",
+  "created_at": "2026-10-07T14:16:54.176886Z",
+  "total_rows": 1560,
+  "train_rows": 1092,
+  "validation_rows": 234,
+  "test_rows": 234,
+  "feature_count": 92,
+  "numerical_feature_count": 68,
+  "categorical_feature_count": 2,
+  "boolean_feature_count": 22,
+  "feature_group_counts": {
+    "TEXT": 12,
+    "LANGUAGE": 6,
+    "CLAIM": 14,
+    "EVIDENCE": 8,
+    "RETRIEVAL": 6,
+    "CONTRADICTION": 12,
+    "IMAGE": 8,
+    "SOURCE_DOMAIN": 9,
+    "GRAPH": 11,
+    "SCAM_SIGNAL": 6
+  },
+  "target_class_distribution": {
+    "LOW": 180,
+    "MEDIUM": 240,
+    "HIGH": 990,
+    "INSUFFICIENT": 150
+  },
+  "target_class_proportions": {
+    "LOW": 0.1154,
+    "MEDIUM": 0.1538,
+    "HIGH": 0.6346,
+    "INSUFFICIENT": 0.0962
+  },
+  "missing_value_count": 0,
+  "missing_value_rate": 0.0,
+  "constant_features": [
+    "atomic_claim_count",
+    "claim_count",
+    "claims_with_evidence",
+    "claims_without_evidence",
+    "domain_age_available",
+    "domain_age_days",
+    "domain_count",
+    "email_count",
+    "evidence_count",
+    "evidence_coverage_ratio",
+    "evidence_relation_entropy",
+    "evidence_source_count",
+    "graph_account_nodes",
+    "graph_claim_nodes",
+    "graph_degree_mean",
+    "graph_edge_count",
+    "graph_evidence_nodes",
+    "graph_node_count",
+    "graph_url_nodes",
+    "has_evidence",
+    "has_image",
+    "image_count",
+    "image_reuse_count",
+    "independent_source_count",
+    "language_confidence",
+    "ocr_available",
+    "ocr_confidence",
+    "ocr_text_length",
+    "ocr_unreliable",
+    "official_domain_match",
+    "phash_match_count",
+    "question_count",
+    "retrieval_score_available",
+    "shortened_url_count",
+    "source_count",
+    "source_diversity",
+    "top_retrieval_score",
+    "unique_domain_count",
+    "unique_source_count",
+    "url_count_in_text"
+  ],
+  "near_constant_features": [],
+  "high_correlation_pairs": [
+    {
+      "feature_1": "verifiable_claim_count",
+      "feature_2": "non_verifiable_claim_count",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "verifiable_claim_count",
+      "feature_2": "claim_decomposition_confidence",
+      "correlation": 0.9886
+    },
+    {
+      "feature_1": "non_verifiable_claim_count",
+      "feature_2": "claim_decomposition_confidence",
+      "correlation": 0.9886
+    },
+    {
+      "feature_1": "support_count",
+      "feature_2": "support_ratio",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "support_count",
+      "feature_2": "support_to_contradiction_ratio",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "support_count",
+      "feature_2": "graph_support_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "contradict_count",
+      "feature_2": "contradiction_ratio",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "contradict_count",
+      "feature_2": "graph_contradict_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "neutral_count",
+      "feature_2": "neutral_ratio",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "neutral_count",
+      "feature_2": "graph_neutral_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "insufficient_count",
+      "feature_2": "insufficient_ratio",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "insufficient_count",
+      "feature_2": "graph_insufficient_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "support_ratio",
+      "feature_2": "support_to_contradiction_ratio",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "support_ratio",
+      "feature_2": "graph_support_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "contradiction_ratio",
+      "feature_2": "graph_contradict_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "neutral_ratio",
+      "feature_2": "graph_neutral_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "insufficient_ratio",
+      "feature_2": "graph_insufficient_edges",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "support_to_contradiction_ratio",
+      "feature_2": "graph_support_edges",
+      "correlation": 1.0
+    }
+  ],
+  "numerical_feature_distributions": {
+    "text_length": {
+      "min": 74.0,
+      "max": 144.0,
+      "mean": 115.3346,
+      "median": 118.0,
+      "std": 15.4638
+    },
+    "word_count": {
+      "min": 10.0,
+      "max": 24.0,
+      "mean": 16.3692,
+      "median": 16.0,
+      "std": 3.2077
+    },
+    "sentence_count": {
+      "min": 1.0,
+      "max": 4.0,
+      "mean": 2.4782,
+      "median": 2.0,
+      "std": 0.8538
+    },
+    "uppercase_ratio": {
+      "min": 0.0,
+      "max": 0.1604,
+      "mean": 0.0415,
+      "median": 0.0337,
+      "std": 0.0478
+    },
+    "digit_ratio": {
+      "min": 0.0,
+      "max": 0.1949,
+      "mean": 0.0748,
+      "median": 0.0877,
+      "std": 0.0502
+    },
+    "punctuation_ratio": {
+      "min": 0.0088,
+      "max": 0.0531,
+      "mean": 0.0378,
+      "median": 0.0379,
+      "std": 0.0108
+    },
+    "url_count_in_text": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "phone_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2962,
+      "median": 0.0,
+      "std": 0.4566
+    },
+    "email_count": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "currency_symbol_count": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.6577,
+      "median": 1.0,
+      "std": 0.8287
+    },
+    "exclamation_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1538,
+      "median": 0.0,
+      "std": 0.3608
+    },
+    "question_count": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "language_id": {
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 1.8205,
+      "median": 2.0,
+      "std": 1.4478
+    },
+    "language_confidence": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "claim_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "atomic_claim_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "verifiable_claim_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.8654,
+      "median": 1.0,
+      "std": 0.3413
+    },
+    "non_verifiable_claim_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1346,
+      "median": 0.0,
+      "std": 0.3413
+    },
+    "claim_decomposition_confidence": {
+      "min": 0.1,
+      "max": 0.95,
+      "mean": 0.824,
+      "median": 0.95,
+      "std": 0.2718
+    },
+    "conditional_claim_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1308,
+      "median": 0.0,
+      "std": 0.3371
+    },
+    "negated_claim_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1551,
+      "median": 0.0,
+      "std": 0.362
+    },
+    "numeric_claim_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.8462,
+      "median": 1.0,
+      "std": 0.3608
+    },
+    "temporal_claim_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2,
+      "median": 0.0,
+      "std": 0.4
+    },
+    "evidence_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "claims_with_evidence": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "claims_without_evidence": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "evidence_coverage_ratio": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "evidence_source_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "independent_source_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "source_diversity": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "retrieved_evidence_count": {
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 0.4462,
+      "median": 0.0,
+      "std": 1.2592
+    },
+    "relevant_evidence_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1115,
+      "median": 0.0,
+      "std": 0.3148
+    },
+    "supporting_retrieval_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.0154,
+      "median": 0.0,
+      "std": 0.1231
+    },
+    "contradicting_retrieval_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.0962,
+      "median": 0.0,
+      "std": 0.2948
+    },
+    "top_retrieval_score": {
+      "min": -1.0,
+      "max": -1.0,
+      "mean": -1.0,
+      "median": -1.0,
+      "std": 0.0
+    },
+    "support_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "contradict_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6538,
+      "median": 1.0,
+      "std": 0.4757
+    },
+    "neutral_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "insufficient_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "support_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "contradiction_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6538,
+      "median": 1.0,
+      "std": 0.4757
+    },
+    "neutral_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "insufficient_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "support_to_contradiction_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "evidence_relation_entropy": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "image_count": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "ocr_confidence": {
+      "min": -1.0,
+      "max": -1.0,
+      "mean": -1.0,
+      "median": -1.0,
+      "std": 0.0
+    },
+    "ocr_text_length": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "image_reuse_count": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "phash_match_count": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "source_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "unique_source_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "domain_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "unique_domain_count": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "domain_age_days": {
+      "min": -1.0,
+      "max": -1.0,
+      "mean": -1.0,
+      "median": -1.0,
+      "std": 0.0
+    },
+    "shortened_url_count": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "graph_node_count": {
+      "min": 5.0,
+      "max": 5.0,
+      "mean": 5.0,
+      "median": 5.0,
+      "std": 0.0
+    },
+    "graph_edge_count": {
+      "min": 4.0,
+      "max": 4.0,
+      "mean": 4.0,
+      "median": 4.0,
+      "std": 0.0
+    },
+    "graph_claim_nodes": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "graph_evidence_nodes": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "graph_url_nodes": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "graph_account_nodes": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0
+    },
+    "graph_support_edges": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "graph_contradict_edges": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6538,
+      "median": 1.0,
+      "std": 0.4757
+    },
+    "graph_neutral_edges": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "graph_insufficient_edges": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1154,
+      "median": 0.0,
+      "std": 0.3195
+    },
+    "graph_degree_mean": {
+      "min": 1.6,
+      "max": 1.6,
+      "mean": 1.6,
+      "median": 1.6,
+      "std": 0.0
+    },
+    "financial_claim_count": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1538,
+      "median": 0.0,
+      "std": 0.3608
+    }
+  },
+  "categorical_feature_distributions": {
+    "language": {
+      "en": 400,
+      "hi": 340,
+      "ta": 300,
+      "hi-en": 300,
+      "ta-en": 220
+    },
+    "script": {
+      "Latin": 920,
+      "Devanagari": 340,
+      "Tamil": 300
+    }
+  },
+  "boolean_feature_distributions": {
+    "is_code_mixed": {
+      "true": 520,
+      "false": 1040
+    },
+    "is_transliterated": {
+      "true": 520,
+      "false": 1040
+    },
+    "has_financial_claim": {
+      "true": 240,
+      "false": 1320
+    },
+    "has_job_claim": {
+      "true": 120,
+      "false": 1440
+    },
+    "has_giveaway_claim": {
+      "true": 120,
+      "false": 1440
+    },
+    "has_credential_claim": {
+      "true": 120,
+      "false": 1440
+    },
+    "has_shopping_claim": {
+      "true": 120,
+      "false": 1440
+    },
+    "has_evidence": {
+      "true": 1560,
+      "false": 0
+    },
+    "retrieval_score_available": {
+      "true": 0,
+      "false": 1560
+    },
+    "contradiction_presence": {
+      "true": 1020,
+      "false": 540
+    },
+    "support_presence": {
+      "true": 180,
+      "false": 1380
+    },
+    "has_image": {
+      "true": 0,
+      "false": 1560
+    },
+    "ocr_available": {
+      "true": 0,
+      "false": 1560
+    },
+    "ocr_unreliable": {
+      "true": 0,
+      "false": 1560
+    },
+    "official_source_present": {
+      "true": 1200,
+      "false": 360
+    },
+    "official_domain_match": {
+      "true": 1560,
+      "false": 0
+    },
+    "domain_age_available": {
+      "true": 0,
+      "false": 1560
+    },
+    "guarantee_claim_present": {
+      "true": 150,
+      "false": 1410
+    },
+    "urgency_signal_present": {
+      "true": 44,
+      "false": 1516
+    },
+    "upfront_payment_present": {
+      "true": 294,
+      "false": 1266
+    },
+    "currency_present": {
+      "true": 786,
+      "false": 774
+    },
+    "temporal_deadline_present": {
+      "true": 452,
+      "false": 1108
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "dataset_id": "trustlens_graph_v0.1.0",
+  "graph_dataset_version": "v0.1.0",
+  "source_dataset_version": "v0.2.0",
+  "retrieval_dataset_version": "v0.1.0",
+  "schema_version": "1.0.0",
+  "created_at": "2026-10-07T13:46:53.812441+00:00",
+  "graph_count": 1560,
+  "node_count": 7800,
+  "edge_count": 6240,
+  "density": 0.000103,
+  "node_type_distribution": {
+    "POST": 1560,
+    "ACCOUNT": 1560,
+    "CLAIM": 1560,
+    "EVIDENCE": 1560,
+    "URL": 1560
+  },
+  "edge_type_distribution": {
+    "ASSOCIATED_WITH": 1560,
+    "HAS_CLAIM": 1560,
+    "CONTRADICTS": 1020,
+    "SOURCED_FROM": 1560,
+    "SUPPORTS": 180,
+    "INSUFFICIENT_FOR": 180,
+    "NEUTRAL_TO": 180
+  },
+  "relation_distribution": {
+    "CONTRADICTS": 1020,
+    "SUPPORTS": 180,
+    "INSUFFICIENT": 180,
+    "NEUTRAL": 180
+  },
+  "risk_distribution": {
+    "HIGH": 990,
+    "LOW": 180,
+    "INSUFFICIENT": 150,
+    "MEDIUM": 240
+  },
+  "language_distribution": {
+    "en": 400,
+    "ta": 300,
+    "hi": 340,
+    "ta-en": 220,
+    "hi-en": 300
+  },
+  "train_graphs": 1092,
+  "validation_graphs": 234,
+  "test_graphs": 234,
+  "cluster_count": 380,
+  "average_nodes_per_graph": 5.0,
+  "average_edges_per_graph": 4.0,
+  "average_claims_per_post": 1.0,
+  "average_evidence_per_claim": 1.0,
+  "cross_split_leakage": 0,
+  "duplicate_nodes": 0,
+  "duplicate_edges": 0,
+  "invalid_edges": 0,
+  "orphan_claims": 0,
+  "pyg_conversion_status": "PYG_NOT_INSTALLED"
+}

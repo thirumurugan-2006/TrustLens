@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from app.input.schemas import UniversalSocialPost
+from app.schemas import NormalizedPost as UniversalSocialPost
 from typing import Dict, Any
 
 class BasePlatformAdapter(ABC):

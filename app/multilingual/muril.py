@@ -18,8 +18,18 @@ class MurilEncoder:
 
     def _load_model(self):
         if self.model is None or self.tokenizer is None:
-            self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-            self.model = AutoModel.from_pretrained(self.model_name).to(self.device)
+            try:
+                self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+                self.model = AutoModel.from_pretrained(self.model_name).to(self.device)
+            except Exception:
+                try:
+                    import huggingface_hub.constants
+                    huggingface_hub.constants.HF_HUB_OFFLINE = True
+                except Exception:
+                    pass
+                os.environ["HF_HUB_OFFLINE"] = "1"
+                self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, local_files_only=True)
+                self.model = AutoModel.from_pretrained(self.model_name, local_files_only=True).to(self.device)
             self.model.eval()
 
     def encode(self, texts: List[str]) -> List[List[float]]:

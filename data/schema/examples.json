@@ -1,0 +1,1313 @@
+{
+  "posts": [
+    {
+      "post_id": "ex_post_001_en_fin",
+      "platform": "text",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "Guaranteed 50% monthly returns on crypto deposit! Deposit ₹10,000 today and receive ₹15,000 next month.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "en",
+        "languages": [
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "Guaranteed 50% monthly returns on crypto deposit! Deposit ₹10,000 today and receive ₹15,000 next month.",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_002_hi_fin",
+      "platform": "text",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "प्रति माह ₹50,000 की गारंटीड कमाई! अभी ₹500 रजिस्ट्रेशन शुल्क जमा करें।",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "hi",
+        "languages": [
+          "hi"
+        ],
+        "script": [
+          "Devanagari"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "प्रति माह ₹50,000 की गारंटीड कमाई! अभी ₹500 रजिस्ट्रेशन शुल्क जमा करें।",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_003_ta_fin",
+      "platform": "text",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "மாதம் ₹50,000 சம்பாதிக்கலாம். தொடக்க கட்டணம் ₹500 செலுத்தவும்.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "ta",
+        "languages": [
+          "ta"
+        ],
+        "script": [
+          "Tamil"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "மாதம் ₹50,000 சம்பாதிக்கலாம். தொடக்க கட்டணம் ₹500 செலுத்தவும்.",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_004_tanglish",
+      "platform": "text",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "Intha scheme la invest panna double returns kedaikum. Fast payout guaranteed.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "ta",
+        "languages": [
+          "ta",
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": true,
+        "transliterated": true,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "Intha scheme la invest panna double returns kedaikum. Fast payout guaranteed.",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_005_conditional",
+      "platform": "generic",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "If you transfer ₹5,000 within 24 hours, your account unlock code will be sent immediately.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "en",
+        "languages": [
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "If you transfer ₹5,000 within 24 hours, your account unlock code will be sent immediately.",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_006_negated",
+      "platform": "generic",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "TrustLens disclaimer: This community group is NOT affiliated with the Reserve Bank of India.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "en",
+        "languages": [
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "TrustLens disclaimer: This community group is NOT affiliated with the Reserve Bank of India.",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_007_attributed",
+      "platform": "telegram",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "According to Telegram administrator @CryptoGod88, all withdrawals will be processed in 5 minutes.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "en",
+        "languages": [
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "According to Telegram administrator @CryptoGod88, all withdrawals will be processed in 5 minutes.",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_008_insufficient",
+      "platform": "generic",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "Local potter Ramesh has started selling terracotta tea cups near Madurai temple.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "en",
+        "languages": [
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "Local potter Ramesh has started selling terracotta tea cups near Madurai temple.",
+      "title": null,
+      "images": []
+    },
+    {
+      "post_id": "ex_post_009_multimodal",
+      "platform": "screenshot",
+      "post_type": "image_text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "See payment confirmation below",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [
+          "data/raw/screenshots/fake_receipt_01.png"
+        ],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "en",
+        "languages": [
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [
+        {
+          "image_id": "img_receipt_01",
+          "image_path": "data/raw/screenshots/fake_receipt_01.png",
+          "image_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ocr_text": "Payment Successful to John Doe ₹25,000 Ref: TXN998811",
+          "ocr_language": "en",
+          "ocr_confidence": 0.95,
+          "ocr_engine": "easyocr_en",
+          "image_quality": "HIGH",
+          "image_provenance": null
+        }
+      ],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "See payment confirmation below",
+      "title": null,
+      "images": [
+        "data/raw/screenshots/fake_receipt_01.png"
+      ]
+    },
+    {
+      "post_id": "ex_post_010_multiple_claims",
+      "platform": "generic",
+      "post_type": "text",
+      "source_url": null,
+      "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+      },
+      "content": {
+        "title": null,
+        "text": "Urgent Hiring: Data Entry operators! Earn ₹35,000 per month. Free company laptop provided upon ₹1,000 refundable security deposit.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "comments": [],
+      "replies": [],
+      "quoted_content": null,
+      "reposted_content": null,
+      "timestamp": null,
+      "metadata": {},
+      "acquisition": "unknown",
+      "language_info": {
+        "primary": "en",
+        "languages": [
+          "en"
+        ],
+        "script": [
+          "Latin"
+        ],
+        "code_mixed": false,
+        "transliterated": false,
+        "normalized_text": null,
+        "original_text": null
+      },
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "images_meta": [],
+      "is_example": true,
+      "schema_version": "1.0.0",
+      "text": "Urgent Hiring: Data Entry operators! Earn ₹35,000 per month. Free company laptop provided upon ₹1,000 refundable security deposit.",
+      "title": null,
+      "images": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "ex_claim_001",
+      "post_id": "ex_post_001_en_fin",
+      "claim_text": "Guaranteed 50% monthly returns on crypto deposit",
+      "claim_type": "FINANCIAL",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": {
+        "split": "validation",
+        "source_group_id": "synth_group_01",
+        "campaign_group_id": "synth_campaign_01",
+        "post_family_id": null,
+        "image_family_id": null,
+        "translation_group_id": null
+      },
+      "annotation": {
+        "annotation_id": "8b9067e5-5c63-4561-9b19-47de5ef89d38",
+        "annotator_id": "expert_reviewer_01",
+        "annotation_timestamp": "2026-10-07T06:03:33.259923+00:00",
+        "schema_version": "1.0.0",
+        "guideline_version": "1.0.0",
+        "review_status": "APPROVED",
+        "confidence": "HIGH",
+        "notes": "Synthetic schema validation benchmark record"
+      },
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_002",
+      "post_id": "ex_post_002_hi_fin",
+      "claim_text": "प्रति माह ₹50,000 की गारंटीड कमाई के लिए ₹500 रजिस्ट्रेशन शुल्क",
+      "claim_type": "FINANCIAL",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "hi",
+      "script": "Devanagari",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_003",
+      "post_id": "ex_post_003_ta_fin",
+      "claim_text": "மாதம் ₹50,000 சம்பாதிக்கலாம்",
+      "claim_type": "JOB",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "ta",
+      "script": "Tamil",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_004",
+      "post_id": "ex_post_004_tanglish",
+      "claim_text": "Intha scheme la invest panna double returns kedaikum",
+      "claim_type": "FINANCIAL",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "ta",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_005",
+      "post_id": "ex_post_005_conditional",
+      "claim_text": "If you transfer ₹5,000 within 24 hours, your account unlock code will be sent immediately",
+      "claim_type": "CREDENTIAL",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_006",
+      "post_id": "ex_post_006_negated",
+      "claim_text": "This community group is NOT affiliated with the Reserve Bank of India",
+      "claim_type": "OTHER",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_007",
+      "post_id": "ex_post_007_attributed",
+      "claim_text": "All withdrawals will be processed in 5 minutes",
+      "claim_type": "FINANCIAL",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": {
+        "speaker": "@CryptoGod88",
+        "channel": "Telegram"
+      },
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_008",
+      "post_id": "ex_post_008_insufficient",
+      "claim_text": "Ramesh started selling terracotta tea cups near Madurai temple",
+      "claim_type": "OTHER",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 0.2,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_009",
+      "post_id": "ex_post_009_multimodal",
+      "claim_text": "Payment Successful to John Doe ₹25,000 Ref: TXN998811",
+      "claim_type": "PAYMENT",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_010a",
+      "post_id": "ex_post_010_multiple_claims",
+      "claim_text": "Earn ₹35,000 per month as Data Entry operator",
+      "claim_type": "JOB",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "claim_id": "ex_claim_010b",
+      "post_id": "ex_post_010_multiple_claims",
+      "claim_text": "Free company laptop provided upon ₹1,000 refundable security deposit",
+      "claim_type": "PAYMENT",
+      "detection_label": "CLAIM",
+      "claim_status": "ACTIVE",
+      "check_worthiness": 1.0,
+      "source_span": null,
+      "language": "en",
+      "script": "Latin",
+      "attribution": null,
+      "modality": null,
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    }
+  ],
+  "atomic_claims": [
+    {
+      "atomic_claim_id": "ex_atomic_001a",
+      "parent_claim_id": "ex_claim_001",
+      "original_text": "Deposit ₹10,000 today",
+      "normalized_text": "Investor deposits ₹10,000 today",
+      "claim_type": "FINANCIAL",
+      "subject": "Investor",
+      "predicate": "deposits",
+      "object": null,
+      "value": "10,000",
+      "unit": null,
+      "currency": "INR",
+      "temporal_context": {
+        "relative": "today"
+      },
+      "polarity": "POSITIVE",
+      "negated": false,
+      "entities": [],
+      "conditions": null,
+      "relationships": [],
+      "attribution": null,
+      "modality": null,
+      "certainty": null,
+      "language": "unknown",
+      "script": "unknown",
+      "source_span": null,
+      "verifiable": false,
+      "decomposition_confidence": 1.0,
+      "metadata": {},
+      "claim_type_enum": "FINANCIAL",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "atomic_claim_id": "ex_atomic_001b",
+      "parent_claim_id": "ex_claim_001",
+      "original_text": "receive ₹15,000 next month",
+      "normalized_text": "Investor receives ₹15,000 next month",
+      "claim_type": "FINANCIAL",
+      "subject": "Investor",
+      "predicate": "receives",
+      "object": null,
+      "value": "15,000",
+      "unit": null,
+      "currency": "INR",
+      "temporal_context": {
+        "relative": "next month"
+      },
+      "polarity": "POSITIVE",
+      "negated": false,
+      "entities": [],
+      "conditions": null,
+      "relationships": [
+        {
+          "target": "ex_atomic_001a",
+          "type": "promised_outcome"
+        }
+      ],
+      "attribution": null,
+      "modality": null,
+      "certainty": null,
+      "language": "unknown",
+      "script": "unknown",
+      "source_span": null,
+      "verifiable": false,
+      "decomposition_confidence": 1.0,
+      "metadata": {},
+      "claim_type_enum": "FINANCIAL",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "atomic_claim_id": "ex_atomic_005a",
+      "parent_claim_id": "ex_claim_005",
+      "original_text": "transfer ₹5,000 within 24 hours",
+      "normalized_text": "User transfers ₹5,000 within 24 hours",
+      "claim_type": "PAYMENT",
+      "subject": "User",
+      "predicate": "transfers",
+      "object": null,
+      "value": "5,000",
+      "unit": null,
+      "currency": "INR",
+      "temporal_context": {
+        "window": "24 hours"
+      },
+      "polarity": "POSITIVE",
+      "negated": false,
+      "entities": [],
+      "conditions": null,
+      "relationships": [],
+      "attribution": null,
+      "modality": null,
+      "certainty": null,
+      "language": "unknown",
+      "script": "unknown",
+      "source_span": null,
+      "verifiable": false,
+      "decomposition_confidence": 1.0,
+      "metadata": {},
+      "claim_type_enum": "PAYMENT",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "atomic_claim_id": "ex_atomic_005b",
+      "parent_claim_id": "ex_claim_005",
+      "original_text": "account unlock code will be sent immediately",
+      "normalized_text": "Support sends account unlock code immediately",
+      "claim_type": "CREDENTIAL",
+      "subject": "Support",
+      "predicate": "sends",
+      "object": "unlock code",
+      "value": null,
+      "unit": null,
+      "currency": null,
+      "temporal_context": null,
+      "polarity": "POSITIVE",
+      "negated": false,
+      "entities": [],
+      "conditions": {
+        "prerequisite": "transfer ₹5,000 within 24 hours"
+      },
+      "relationships": [
+        {
+          "target": "ex_atomic_005a",
+          "type": "promised_outcome"
+        }
+      ],
+      "attribution": null,
+      "modality": null,
+      "certainty": null,
+      "language": "unknown",
+      "script": "unknown",
+      "source_span": null,
+      "verifiable": false,
+      "decomposition_confidence": 1.0,
+      "metadata": {},
+      "claim_type_enum": "CREDENTIAL",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    },
+    {
+      "atomic_claim_id": "ex_atomic_006",
+      "parent_claim_id": "ex_claim_006",
+      "original_text": "This community group is NOT affiliated with the Reserve Bank of India",
+      "normalized_text": "Community group is not affiliated with Reserve Bank of India",
+      "claim_type": "OTHER",
+      "subject": "Community group",
+      "predicate": "affiliated_with",
+      "object": "Reserve Bank of India",
+      "value": null,
+      "unit": null,
+      "currency": null,
+      "temporal_context": null,
+      "polarity": "NEGATIVE",
+      "negated": true,
+      "entities": [],
+      "conditions": null,
+      "relationships": [],
+      "attribution": null,
+      "modality": null,
+      "certainty": null,
+      "language": "unknown",
+      "script": "unknown",
+      "source_span": null,
+      "verifiable": false,
+      "decomposition_confidence": 1.0,
+      "metadata": {},
+      "claim_type_enum": "OTHER",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "split_info": null,
+      "annotation": null,
+      "is_example": true
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ex_ev_001",
+      "claim_id": "ex_claim_001",
+      "evidence_text": "Reserve Bank of India regulatory bulletin: crypto entities offering guaranteed fixed returns operate without authorization.",
+      "source_url": "https://example.gov.in/rbi/crypto_warning.pdf",
+      "source_type": "REGULATORY_BULLETIN",
+      "source_title": "RBI Advisory on Unauthorized Investment Schemes",
+      "retrieval_method": "dense_retrieval",
+      "retrieval_query_id": null,
+      "source_timestamp": null,
+      "language": "en",
+      "relation_label": "CONTRADICTS",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "reliability_metadata": {},
+      "annotation": {
+        "annotation_id": "8b9067e5-5c63-4561-9b19-47de5ef89d38",
+        "annotator_id": "expert_reviewer_01",
+        "annotation_timestamp": "2026-10-07T06:03:33.259923+00:00",
+        "schema_version": "1.0.0",
+        "guideline_version": "1.0.0",
+        "review_status": "APPROVED",
+        "confidence": "HIGH",
+        "notes": "Synthetic schema validation benchmark record"
+      },
+      "is_example": true
+    },
+    {
+      "evidence_id": "ex_ev_008",
+      "claim_id": "ex_claim_008",
+      "evidence_text": "No local or commercial records found regarding Madurai street artisan Ramesh.",
+      "source_url": null,
+      "source_type": "RETRIEVAL_EMPTY",
+      "source_title": "Search Index Report",
+      "retrieval_method": "web_search",
+      "retrieval_query_id": null,
+      "source_timestamp": null,
+      "language": "en",
+      "relation_label": "INSUFFICIENT",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "reliability_metadata": {},
+      "annotation": null,
+      "is_example": true
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "ex_risk_001",
+      "post_id": "ex_post_001_en_fin",
+      "claim_ids": [
+        "ex_claim_001"
+      ],
+      "risk_level": "HIGH",
+      "risk_factors": [
+        "guaranteed_high_returns",
+        "unauthorized_entity",
+        "regulatory_contradiction"
+      ],
+      "evidence_summary": "Contradicted by official regulatory warnings against guaranteed crypto returns.",
+      "confidence": "HIGH",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "annotation": {
+        "annotation_id": "8b9067e5-5c63-4561-9b19-47de5ef89d38",
+        "annotator_id": "expert_reviewer_01",
+        "annotation_timestamp": "2026-10-07T06:03:33.259923+00:00",
+        "schema_version": "1.0.0",
+        "guideline_version": "1.0.0",
+        "review_status": "APPROVED",
+        "confidence": "HIGH",
+        "notes": "Synthetic schema validation benchmark record"
+      },
+      "is_example": true
+    },
+    {
+      "risk_id": "ex_risk_008",
+      "post_id": "ex_post_008_insufficient",
+      "claim_ids": [
+        "ex_claim_008"
+      ],
+      "risk_level": "INSUFFICIENT",
+      "risk_factors": [],
+      "evidence_summary": "Zero external verification sources found; statement represents benign local claim with insufficient risk signals.",
+      "confidence": "HIGH",
+      "provenance": {
+        "source_type": "SYNTHETIC",
+        "source_name": "TrustLens Synthetic Verification Benchmark",
+        "source_id": "synthetic_bench_v1",
+        "collection_method": "rule_synthesized",
+        "license": "CC-BY-4.0",
+        "collection_date": "2026-10-07T06:03:33.259792+00:00"
+      },
+      "annotation": null,
+      "is_example": true
+    }
+  ]
+}

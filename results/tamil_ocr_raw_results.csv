@@ -1,0 +1,154 @@
+image_id,backend,ground_truth,prediction,raw_confidence,reliability_score,tamil_ratio,valid_char_ratio,detection_count,category,language,processing_time_ms,status,error,confidence_bucket,cer,wer,exact_match,annotation_status
+tamil_clean_001,paddleocr_ta,தமிழ்,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_001,easyocr_en,தமிழ்,,,0.2,0.0,0.0,0,clean,ta,960.56,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_002,paddleocr_ta,வணக்கம்,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_002,easyocr_en,வணக்கம்,,,0.2,0.0,0.0,0,clean,ta,352.78,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_003,paddleocr_ta,இந்தியா,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_003,easyocr_en,இந்தியா,,,0.2,0.0,0.0,0,clean,ta,360.48,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_004,paddleocr_ta,செய்தி,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_004,easyocr_en,செய்தி,,,0.2,0.0,0.0,0,clean,ta,484.97,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_005,paddleocr_ta,அரசு,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_005,easyocr_en,அரசு,,,0.2,0.0,0.0,0,clean,ta,371.16,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_006,paddleocr_ta,மக்கள்,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_006,easyocr_en,மக்கள்,,,0.2,0.0,0.0,0,clean,ta,330.06,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_007,paddleocr_ta,தமிழ்நாடு,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_007,easyocr_en,தமிழ்நாடு,,,0.2,0.0,0.0,0,clean,ta,327.94,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_008,paddleocr_ta,பள்ளி,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_008,easyocr_en,பள்ளி,,,0.2,0.0,0.0,0,clean,ta,334.58,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_009,paddleocr_ta,கல்வி,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_009,easyocr_en,கல்வி,,,0.2,0.0,0.0,0,clean,ta,351.18,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_clean_010,paddleocr_ta,நீதிமன்றம்,,,,0.0,0.0,0,clean,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_clean_010,easyocr_en,நீதிமன்றம்,,,0.2,0.0,0.0,0,clean,ta,333.33,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_blurry_001,paddleocr_ta,தமிழ்,,,,0.0,0.0,0,blurry,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_blurry_001,easyocr_en,தமிழ்,CCCCC,0.3281,0.5561,0.0,1.0,1,blurry,ta,897.37,SUCCESS,,0.3-0.4,1.0,1.0,0,VALID
+tamil_blurry_002,paddleocr_ta,வணக்கம்,,,,0.0,0.0,0,blurry,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_blurry_002,easyocr_en,வணக்கம்,CCCCCCC,0.406,0.5929,0.0,1.0,1,blurry,ta,730.76,SUCCESS,,0.4-0.5,1.0,1.0,0,VALID
+tamil_blurry_003,paddleocr_ta,இந்தியா,,,,0.0,0.0,0,blurry,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_blurry_003,easyocr_en,இந்தியா,CCCCCCC,0.406,0.5929,0.0,1.0,1,blurry,ta,502.91,SUCCESS,,0.4-0.5,1.0,1.0,0,VALID
+tamil_blurry_004,paddleocr_ta,செய்தி,,,,0.0,0.0,0,blurry,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_blurry_004,easyocr_en,செய்தி,CCCCCC,0.2495,0.5204,0.0,1.0,1,blurry,ta,510.17,SUCCESS,,0.2-0.3,1.0,1.0,0,VALID
+tamil_blurry_005,paddleocr_ta,அரசு,,,,0.0,0.0,0,blurry,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_blurry_005,easyocr_en,அரசு,CCCC,0.4107,0.5936,0.0,1.0,1,blurry,ta,634.4,SUCCESS,,0.4-0.5,1.0,1.0,0,VALID
+tamil_noisy_001,paddleocr_ta,தமிழ்,,,,0.0,0.0,0,noisy,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_noisy_001,easyocr_en,தமிழ்,DOO0D,0.1835,0.4896,0.0,1.0,1,noisy,ta,521.24,SUCCESS,,0.1-0.2,1.0,1.0,0,VALID
+tamil_noisy_002,paddleocr_ta,வணக்கம்,,,,0.0,0.0,0,noisy,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_noisy_002,easyocr_en,வணக்கம்,DOODOD0,0.1256,0.4639,0.0,1.0,1,noisy,ta,611.86,SUCCESS,,0.1-0.2,1.0,1.0,0,VALID
+tamil_noisy_003,paddleocr_ta,இந்தியா,,,,0.0,0.0,0,noisy,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_noisy_003,easyocr_en,இந்தியா,QQOOODD,0.0702,0.4385,0.0,1.0,1,noisy,ta,621.47,LOW_CONFIDENCE,,0.0-0.1,1.0,1.0,0,VALID
+tamil_noisy_004,paddleocr_ta,செய்தி,,,,0.0,0.0,0,noisy,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_noisy_004,easyocr_en,செய்தி,DDDDDD,0.1715,0.4846,0.0,1.0,1,noisy,ta,438.26,SUCCESS,,0.1-0.2,1.0,1.0,0,VALID
+tamil_noisy_005,paddleocr_ta,அரசு,,,,0.0,0.0,0,noisy,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_noisy_005,easyocr_en,அரசு,DDD,0.4919,0.6304,0.0,1.0,1,noisy,ta,404.6,SUCCESS,,0.4-0.5,1.0,1.0,0,VALID
+tamil_lowres_001,paddleocr_ta,தமிழ்,,,,0.0,0.0,0,low_resolution,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_lowres_001,easyocr_en,தமிழ்,,,0.2,0.0,0.0,0,low_resolution,ta,522.5,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_lowres_002,paddleocr_ta,வணக்கம்,,,,0.0,0.0,0,low_resolution,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_lowres_002,easyocr_en,வணக்கம்,,,0.2,0.0,0.0,0,low_resolution,ta,429.35,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_lowres_003,paddleocr_ta,இந்தியா,,,,0.0,0.0,0,low_resolution,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_lowres_003,easyocr_en,இந்தியா,,,0.2,0.0,0.0,0,low_resolution,ta,125.37,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_lowres_004,paddleocr_ta,செய்தி,,,,0.0,0.0,0,low_resolution,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_lowres_004,easyocr_en,செய்தி,,,0.2,0.0,0.0,0,low_resolution,ta,140.87,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_lowres_005,paddleocr_ta,அரசு,,,,0.0,0.0,0,low_resolution,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_lowres_005,easyocr_en,அரசு,,,0.2,0.0,0.0,0,low_resolution,ta,139.97,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+mixed_tamil_en_001,paddleocr_ta,தமிழ் Nadu,,,,0.0,0.0,0,mixed_tamil_english,mixed,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+mixed_tamil_en_001,easyocr_en,தமிழ் Nadu,Nadu,1.0,0.8647,0.0,1.0,1,mixed_tamil_english,mixed,802.42,SUCCESS,,0.9-1.0,0.6,0.5,0,VALID
+mixed_tamil_en_002,paddleocr_ta,India தமிழ்,,,,0.0,0.0,0,mixed_tamil_english,mixed,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+mixed_tamil_en_002,easyocr_en,India தமிழ்,India FF,0.2985,0.544,0.0,1.0,1,mixed_tamil_english,mixed,541.32,SUCCESS,,0.2-0.3,0.4545,0.5,0,VALID
+mixed_tamil_en_003,paddleocr_ta,COVID-19 தமிழ்நாடு,,,,0.0,0.0,0,mixed_tamil_english,mixed,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+mixed_tamil_en_003,easyocr_en,COVID-19 தமிழ்நாடு,COVID-19,0.9299,0.8344,0.0,1.0,1,mixed_tamil_english,mixed,494.87,SUCCESS,,0.9-1.0,0.5556,0.5,0,VALID
+mixed_tamil_en_004,paddleocr_ta,அரசு Order 2024,,,,0.0,0.0,0,mixed_tamil_english,mixed,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+mixed_tamil_en_004,easyocr_en,அரசு Order 2024,E Order 2024,0.5307,0.6528,0.0,1.0,1,mixed_tamil_english,mixed,675.28,SUCCESS,,0.5-0.6,0.2667,0.3333,0,VALID
+tamil_numbers_001,paddleocr_ta,2024 ஆண்டு,,,,0.0,0.0,0,numbers_symbols,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_numbers_001,easyocr_en,2024 ஆண்டு,2024 FF,0.1741,0.4863,0.0,1.0,1,numbers_symbols,ta,518.05,SUCCESS,,0.1-0.2,0.5,0.5,0,VALID
+tamil_numbers_002,paddleocr_ta,100 கோடி,,,,0.0,0.0,0,numbers_symbols,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_numbers_002,easyocr_en,100 கோடி,100,1.0,0.8641,0.0,1.0,1,numbers_symbols,ta,469.36,SUCCESS,,0.9-1.0,0.625,0.5,0,VALID
+tamil_numbers_003,paddleocr_ta,பக்கம் 42,,,,0.0,0.0,0,numbers_symbols,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_numbers_003,easyocr_en,பக்கம் 42,D5 42,0.3191,0.5519,0.0,1.0,1,numbers_symbols,ta,386.38,SUCCESS,,0.3-0.4,0.6667,0.5,0,VALID
+tamil_numbers_004,paddleocr_ta,வரிசை 1,,,,0.0,0.0,0,numbers_symbols,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_numbers_004,easyocr_en,வரிசை 1,,,0.2,0.0,0.0,0,numbers_symbols,ta,329.69,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_multiline_001,paddleocr_ta,வணக்கம் தமிழ்நாடு செய்தி,,,,0.0,0.0,0,multi_line,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_multiline_001,easyocr_en,வணக்கம் தமிழ்நாடு செய்தி,,,0.2,0.0,0.0,0,multi_line,ta,896.51,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_multiline_002,paddleocr_ta,அரசு மக்கள் கல்வி,,,,0.0,0.0,0,multi_line,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_multiline_002,easyocr_en,அரசு மக்கள் கல்வி,,,0.2,0.0,0.0,0,multi_line,ta,599.08,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_complexbg_001,paddleocr_ta,தமிழ்,,,,0.0,0.0,0,complex_background,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_complexbg_001,easyocr_en,தமிழ்,,,0.2,0.0,0.0,0,complex_background,ta,355.95,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_complexbg_002,paddleocr_ta,வணக்கம்,,,,0.0,0.0,0,complex_background,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_complexbg_002,easyocr_en,வணக்கம்,,,0.2,0.0,0.0,0,complex_background,ta,327.61,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_complexbg_003,paddleocr_ta,இந்தியா,,,,0.0,0.0,0,complex_background,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_complexbg_003,easyocr_en,இந்தியா,,,0.2,0.0,0.0,0,complex_background,ta,328.0,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_complexbg_004,paddleocr_ta,செய்தி,,,,0.0,0.0,0,complex_background,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_complexbg_004,easyocr_en,செய்தி,,,0.2,0.0,0.0,0,complex_background,ta,323.14,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+social_media_001,paddleocr_ta,தமிழ்,,,,0.0,0.0,0,social_media,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+social_media_001,easyocr_en,தமிழ்,,,0.2,0.0,0.0,0,social_media,ta,908.98,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+social_media_002,paddleocr_ta,வணக்கம்,,,,0.0,0.0,0,social_media,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+social_media_002,easyocr_en,வணக்கம்,,,0.2,0.0,0.0,0,social_media,ta,629.23,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+social_media_003,paddleocr_ta,இந்தியா,,,,0.0,0.0,0,social_media,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+social_media_003,easyocr_en,இந்தியா,,,0.2,0.0,0.0,0,social_media,ta,620.1,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+social_media_004,paddleocr_ta,செய்தி,,,,0.0,0.0,0,social_media,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+social_media_004,easyocr_en,செய்தி,,,0.2,0.0,0.0,0,social_media,ta,613.29,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_stylized_001,paddleocr_ta,தமிழ்,,,,0.0,0.0,0,stylized,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_stylized_001,easyocr_en,தமிழ்,,,0.2,0.0,0.0,0,stylized,ta,738.75,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_stylized_002,paddleocr_ta,வணக்கம்,,,,0.0,0.0,0,stylized,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_stylized_002,easyocr_en,வணக்கம்,,,0.2,0.0,0.0,0,stylized,ta,464.69,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_stylized_003,paddleocr_ta,இந்தியா,,,,0.0,0.0,0,stylized,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_stylized_003,easyocr_en,இந்தியா,,,0.2,0.0,0.0,0,stylized,ta,437.91,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+tamil_stylized_004,paddleocr_ta,செய்தி,,,,0.0,0.0,0,stylized,ta,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+tamil_stylized_004,easyocr_en,செய்தி,,,0.2,0.0,0.0,0,stylized,ta,444.61,OCR_FAILED,,unavailable,1.0,1.0,0,VALID
+english_baseline_001,paddleocr_ta,Hello World,,,,0.0,0.0,0,clean,en,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+english_baseline_001,easyocr_en,Hello World,Hello World,0.9829,0.8603,0.0,1.0,1,clean,en,426.04,SUCCESS,,0.9-1.0,0.0,0.0,1,VALID
+english_baseline_002,paddleocr_ta,Breaking News,,,,0.0,0.0,0,clean,en,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+english_baseline_002,easyocr_en,Breaking News,Breaking News,1.0,0.8691,0.0,1.0,1,clean,en,447.42,SUCCESS,,0.9-1.0,0.0,0.0,1,VALID
+english_baseline_003,paddleocr_ta,Tamil Nadu 2024,,,,0.0,0.0,0,mixed_tamil_english,en,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+english_baseline_003,easyocr_en,Tamil Nadu 2024,Tamil Nadu 2024,0.7156,0.7393,0.0,1.0,1,mixed_tamil_english,en,587.95,SUCCESS,,0.7-0.8,0.0,0.0,1,VALID
+english_baseline_004,paddleocr_ta,Test 123,,,,0.0,0.0,0,numbers_symbols,en,0.0,OCR_FAILED,"(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+",unavailable,,,,MISSING
+english_baseline_004,easyocr_en,Test 123,Test 123,0.9524,0.8448,0.0,1.0,1,numbers_symbols,en,413.63,SUCCESS,,0.9-1.0,0.0,0.0,1,VALID

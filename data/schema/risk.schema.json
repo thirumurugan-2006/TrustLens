@@ -1,0 +1,216 @@
+{
+  "$defs": {
+    "AnnotationConfidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ],
+      "title": "AnnotationConfidence",
+      "type": "string"
+    },
+    "AnnotationMetadata": {
+      "properties": {
+        "annotation_id": {
+          "title": "Annotation Id",
+          "type": "string"
+        },
+        "annotator_id": {
+          "title": "Annotator Id",
+          "type": "string"
+        },
+        "annotation_timestamp": {
+          "title": "Annotation Timestamp",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "guideline_version": {
+          "default": "1.0.0",
+          "title": "Guideline Version",
+          "type": "string"
+        },
+        "review_status": {
+          "$ref": "#/$defs/ReviewStatus",
+          "default": "APPROVED"
+        },
+        "confidence": {
+          "$ref": "#/$defs/AnnotationConfidence",
+          "default": "HIGH"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "annotator_id"
+      ],
+      "title": "AnnotationMetadata",
+      "type": "object"
+    },
+    "ProvenanceMetadata": {
+      "properties": {
+        "source_type": {
+          "$ref": "#/$defs/ProvenanceSourceType"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "source_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Id"
+        },
+        "collection_method": {
+          "default": "manual",
+          "title": "Collection Method",
+          "type": "string"
+        },
+        "license": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "License"
+        },
+        "collection_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Collection Date"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceMetadata",
+      "type": "object"
+    },
+    "ProvenanceSourceType": {
+      "enum": [
+        "PUBLIC_DATASET",
+        "TRUSTLENS_ANNOTATED",
+        "SYNTHETIC",
+        "TRANSLATED",
+        "HUMAN_REVIEWED",
+        "LOCAL_DATA",
+        "USER_PROVIDED"
+      ],
+      "title": "ProvenanceSourceType",
+      "type": "string"
+    },
+    "ReviewStatus": {
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "FLAGGED_FOR_REVIEW"
+      ],
+      "title": "ReviewStatus",
+      "type": "string"
+    },
+    "RiskLevel": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "INSUFFICIENT"
+      ],
+      "title": "RiskLevel",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "risk_id": {
+      "title": "Risk Id",
+      "type": "string"
+    },
+    "post_id": {
+      "title": "Post Id",
+      "type": "string"
+    },
+    "claim_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Claim Ids",
+      "type": "array"
+    },
+    "risk_level": {
+      "$ref": "#/$defs/RiskLevel"
+    },
+    "risk_factors": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Risk Factors",
+      "type": "array"
+    },
+    "evidence_summary": {
+      "default": "",
+      "title": "Evidence Summary",
+      "type": "string"
+    },
+    "confidence": {
+      "$ref": "#/$defs/AnnotationConfidence",
+      "default": "HIGH"
+    },
+    "provenance": {
+      "$ref": "#/$defs/ProvenanceMetadata"
+    },
+    "annotation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AnnotationMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "is_example": {
+      "default": false,
+      "title": "Is Example",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "post_id",
+    "risk_level",
+    "provenance"
+  ],
+  "title": "TrainingRisk",
+  "type": "object"
+}

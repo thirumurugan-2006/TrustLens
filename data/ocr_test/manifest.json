@@ -1,0 +1,410 @@
+[
+  {
+    "image_id": "tamil_clean_001",
+    "image": "images/tamil_clean_001.png",
+    "ground_truth_text": "தமிழ்",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_002",
+    "image": "images/tamil_clean_002.png",
+    "ground_truth_text": "வணக்கம்",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_003",
+    "image": "images/tamil_clean_003.png",
+    "ground_truth_text": "இந்தியா",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_004",
+    "image": "images/tamil_clean_004.png",
+    "ground_truth_text": "செய்தி",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_005",
+    "image": "images/tamil_clean_005.png",
+    "ground_truth_text": "அரசு",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_006",
+    "image": "images/tamil_clean_006.png",
+    "ground_truth_text": "மக்கள்",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_007",
+    "image": "images/tamil_clean_007.png",
+    "ground_truth_text": "தமிழ்நாடு",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_008",
+    "image": "images/tamil_clean_008.png",
+    "ground_truth_text": "பள்ளி",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_009",
+    "image": "images/tamil_clean_009.png",
+    "ground_truth_text": "கல்வி",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_clean_010",
+    "image": "images/tamil_clean_010.png",
+    "ground_truth_text": "நீதிமன்றம்",
+    "language": "ta",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_blurry_001",
+    "image": "images/tamil_blurry_001.png",
+    "ground_truth_text": "தமிழ்",
+    "language": "ta",
+    "category": "blurry",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_blurry_002",
+    "image": "images/tamil_blurry_002.png",
+    "ground_truth_text": "வணக்கம்",
+    "language": "ta",
+    "category": "blurry",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_blurry_003",
+    "image": "images/tamil_blurry_003.png",
+    "ground_truth_text": "இந்தியா",
+    "language": "ta",
+    "category": "blurry",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_blurry_004",
+    "image": "images/tamil_blurry_004.png",
+    "ground_truth_text": "செய்தி",
+    "language": "ta",
+    "category": "blurry",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_blurry_005",
+    "image": "images/tamil_blurry_005.png",
+    "ground_truth_text": "அரசு",
+    "language": "ta",
+    "category": "blurry",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_noisy_001",
+    "image": "images/tamil_noisy_001.png",
+    "ground_truth_text": "தமிழ்",
+    "language": "ta",
+    "category": "noisy",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_noisy_002",
+    "image": "images/tamil_noisy_002.png",
+    "ground_truth_text": "வணக்கம்",
+    "language": "ta",
+    "category": "noisy",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_noisy_003",
+    "image": "images/tamil_noisy_003.png",
+    "ground_truth_text": "இந்தியா",
+    "language": "ta",
+    "category": "noisy",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_noisy_004",
+    "image": "images/tamil_noisy_004.png",
+    "ground_truth_text": "செய்தி",
+    "language": "ta",
+    "category": "noisy",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_noisy_005",
+    "image": "images/tamil_noisy_005.png",
+    "ground_truth_text": "அரசு",
+    "language": "ta",
+    "category": "noisy",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_lowres_001",
+    "image": "images/tamil_lowres_001.png",
+    "ground_truth_text": "தமிழ்",
+    "language": "ta",
+    "category": "low_resolution",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_lowres_002",
+    "image": "images/tamil_lowres_002.png",
+    "ground_truth_text": "வணக்கம்",
+    "language": "ta",
+    "category": "low_resolution",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_lowres_003",
+    "image": "images/tamil_lowres_003.png",
+    "ground_truth_text": "இந்தியா",
+    "language": "ta",
+    "category": "low_resolution",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_lowres_004",
+    "image": "images/tamil_lowres_004.png",
+    "ground_truth_text": "செய்தி",
+    "language": "ta",
+    "category": "low_resolution",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_lowres_005",
+    "image": "images/tamil_lowres_005.png",
+    "ground_truth_text": "அரசு",
+    "language": "ta",
+    "category": "low_resolution",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "mixed_tamil_en_001",
+    "image": "images/mixed_tamil_en_001.png",
+    "ground_truth_text": "தமிழ் Nadu",
+    "language": "mixed",
+    "category": "mixed_tamil_english",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "mixed_tamil_en_002",
+    "image": "images/mixed_tamil_en_002.png",
+    "ground_truth_text": "India தமிழ்",
+    "language": "mixed",
+    "category": "mixed_tamil_english",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "mixed_tamil_en_003",
+    "image": "images/mixed_tamil_en_003.png",
+    "ground_truth_text": "COVID-19 தமிழ்நாடு",
+    "language": "mixed",
+    "category": "mixed_tamil_english",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "mixed_tamil_en_004",
+    "image": "images/mixed_tamil_en_004.png",
+    "ground_truth_text": "அரசு Order 2024",
+    "language": "mixed",
+    "category": "mixed_tamil_english",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_numbers_001",
+    "image": "images/tamil_numbers_001.png",
+    "ground_truth_text": "2024 ஆண்டு",
+    "language": "ta",
+    "category": "numbers_symbols",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_numbers_002",
+    "image": "images/tamil_numbers_002.png",
+    "ground_truth_text": "100 கோடி",
+    "language": "ta",
+    "category": "numbers_symbols",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_numbers_003",
+    "image": "images/tamil_numbers_003.png",
+    "ground_truth_text": "பக்கம் 42",
+    "language": "ta",
+    "category": "numbers_symbols",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_numbers_004",
+    "image": "images/tamil_numbers_004.png",
+    "ground_truth_text": "வரிசை 1",
+    "language": "ta",
+    "category": "numbers_symbols",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_multiline_001",
+    "image": "images/tamil_multiline_001.png",
+    "ground_truth_text": "வணக்கம் தமிழ்நாடு செய்தி",
+    "language": "ta",
+    "category": "multi_line",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_multiline_002",
+    "image": "images/tamil_multiline_002.png",
+    "ground_truth_text": "அரசு மக்கள் கல்வி",
+    "language": "ta",
+    "category": "multi_line",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_complexbg_001",
+    "image": "images/tamil_complexbg_001.png",
+    "ground_truth_text": "தமிழ்",
+    "language": "ta",
+    "category": "complex_background",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_complexbg_002",
+    "image": "images/tamil_complexbg_002.png",
+    "ground_truth_text": "வணக்கம்",
+    "language": "ta",
+    "category": "complex_background",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_complexbg_003",
+    "image": "images/tamil_complexbg_003.png",
+    "ground_truth_text": "இந்தியா",
+    "language": "ta",
+    "category": "complex_background",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_complexbg_004",
+    "image": "images/tamil_complexbg_004.png",
+    "ground_truth_text": "செய்தி",
+    "language": "ta",
+    "category": "complex_background",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "social_media_001",
+    "image": "images/social_media_001.png",
+    "ground_truth_text": "தமிழ்",
+    "language": "ta",
+    "category": "social_media",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "social_media_002",
+    "image": "images/social_media_002.png",
+    "ground_truth_text": "வணக்கம்",
+    "language": "ta",
+    "category": "social_media",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "social_media_003",
+    "image": "images/social_media_003.png",
+    "ground_truth_text": "இந்தியா",
+    "language": "ta",
+    "category": "social_media",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "social_media_004",
+    "image": "images/social_media_004.png",
+    "ground_truth_text": "செய்தி",
+    "language": "ta",
+    "category": "social_media",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_stylized_001",
+    "image": "images/tamil_stylized_001.png",
+    "ground_truth_text": "தமிழ்",
+    "language": "ta",
+    "category": "stylized",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_stylized_002",
+    "image": "images/tamil_stylized_002.png",
+    "ground_truth_text": "வணக்கம்",
+    "language": "ta",
+    "category": "stylized",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_stylized_003",
+    "image": "images/tamil_stylized_003.png",
+    "ground_truth_text": "இந்தியா",
+    "language": "ta",
+    "category": "stylized",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "tamil_stylized_004",
+    "image": "images/tamil_stylized_004.png",
+    "ground_truth_text": "செய்தி",
+    "language": "ta",
+    "category": "stylized",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "english_baseline_001",
+    "image": "images/english_baseline_001.png",
+    "ground_truth_text": "Hello World",
+    "language": "en",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "english_baseline_002",
+    "image": "images/english_baseline_002.png",
+    "ground_truth_text": "Breaking News",
+    "language": "en",
+    "category": "clean",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "english_baseline_003",
+    "image": "images/english_baseline_003.png",
+    "ground_truth_text": "Tamil Nadu 2024",
+    "language": "en",
+    "category": "mixed_tamil_english",
+    "optional_metadata": {}
+  },
+  {
+    "image_id": "english_baseline_004",
+    "image": "images/english_baseline_004.png",
+    "ground_truth_text": "Test 123",
+    "language": "en",
+    "category": "numbers_symbols",
+    "optional_metadata": {}
+  }
+]

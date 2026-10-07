@@ -1,0 +1,19 @@
+{
+    "claim_extraction": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "macro_f1": 1.0
+    },
+    "language_detection": {
+        "language_accuracy": 1.0,
+        "script_accuracy": 1.0,
+        "code_mix_accuracy": 1.0,
+        "transliteration_accuracy": 1.0
+    },
+    "query_synthesis": {
+        "required_information_preservation": 1.0,
+        "provenance_coverage": 1.0,
+        "duplicate_rate": 0.0
+    }
+}

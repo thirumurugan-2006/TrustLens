@@ -1,0 +1,188 @@
+{
+    "post_id": "screenshot_d62186f323d4",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "InvestmentGrawth Plan 2024 Monthly Return: 15%0 Minimum Investment $500",
+    "images": [
+        "data/raw/screenshots/screenshot_d62186f323d4.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T14:58:49.995465+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "1.7.2",
+        "ocr_status": "SUCCESS",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "InvestmentGrawth Plan 2024 Monthly Return: 15%0 Minimum Investment $500",
+        "ocr_normalized_text": "InvestmentGrawth Plan 2024 Monthly Return: 15%0 Minimum Investment $500",
+        "ocr_confidence": 0.6730166552434506,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "ocr_unreliable": false,
+        "ocr_attempts": 7,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_selected_preprocessing": "upscale_2x",
+        "ocr_selection_score": 0.7479,
+        "ocr_detection_count": 3,
+        "ocr_text_length": 71,
+        "ocr_script_distribution": {
+            "Tamil": 0.0,
+            "Latin": 1.0,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.6050563174708715,
+                "detection_count": 3,
+                "text_length": 66,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.7173,
+                "usable": true,
+                "warnings": [],
+                "backend": "easyocr_en"
+            },
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "upscale_2x",
+                "confidence": 0.6730166552434506,
+                "detection_count": 3,
+                "text_length": 71,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.7479,
+                "usable": true,
+                "warnings": [],
+                "backend": "easyocr_en"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "upscale_2x",
+                "confidence": 0.9955195188522339,
+                "detection_count": 3,
+                "text_length": 70,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.643,
+                "usable": false,
+                "warnings": [
+                    "tamil_ocr_no_tamil_chars"
+                ],
+                "backend": "paddleocr_ta"
+            },
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "grayscale_upscale_2x",
+                "confidence": 0.6730166552434506,
+                "detection_count": 3,
+                "text_length": 71,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.7479,
+                "usable": true,
+                "warnings": [],
+                "backend": "easyocr_en"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "grayscale_upscale_2x",
+                "confidence": 0.9955195188522339,
+                "detection_count": 3,
+                "text_length": 70,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.643,
+                "usable": false,
+                "warnings": [
+                    "tamil_ocr_no_tamil_chars"
+                ],
+                "backend": "paddleocr_ta"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "contrast_enhanced",
+                "confidence": 0.9894117116928101,
+                "detection_count": 3,
+                "text_length": 70,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.6402,
+                "usable": false,
+                "warnings": [
+                    "tamil_ocr_no_tamil_chars"
+                ],
+                "backend": "paddleocr_ta"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "adaptive_threshold",
+                "confidence": 0.9863103628158569,
+                "detection_count": 3,
+                "text_length": 71,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.6388,
+                "usable": false,
+                "warnings": [
+                    "tamil_ocr_no_tamil_chars"
+                ],
+                "backend": "paddleocr_ta"
+            }
+        ],
+        "quality_score": 0.6730166552434506,
+        "quality_level": "medium",
+        "language_analysis": {
+            "primary_language": "en",
+            "language_confidence": 1.0,
+            "secondary_languages": [],
+            "scripts": [
+                "Latin"
+            ],
+            "script_distribution": {
+                "Latin": 1.0,
+                "Tamil": 0.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 600,
+        "image_height": 300,
+        "image_size_bytes": 4663,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    }
+}

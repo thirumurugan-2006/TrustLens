@@ -1,0 +1,78 @@
+{
+  "properties": {
+    "dataset_id": {
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "dataset_version": {
+      "title": "Dataset Version",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "guideline_version": {
+      "default": "1.0.0",
+      "title": "Guideline Version",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "source_summary": {
+      "title": "Source Summary",
+      "type": "string"
+    },
+    "license": {
+      "title": "License",
+      "type": "string"
+    },
+    "record_count": {
+      "title": "Record Count",
+      "type": "integer"
+    },
+    "language_distribution": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Language Distribution",
+      "type": "object"
+    },
+    "label_distribution": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Label Distribution",
+      "type": "object"
+    },
+    "splits_distribution": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Splits Distribution",
+      "type": "object"
+    },
+    "leakage_group_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Leakage Group Counts",
+      "type": "object"
+    }
+  },
+  "required": [
+    "dataset_id",
+    "dataset_version",
+    "source_summary",
+    "license",
+    "record_count",
+    "language_distribution",
+    "label_distribution",
+    "splits_distribution"
+  ],
+  "title": "DatasetManifest",
+  "type": "object"
+}

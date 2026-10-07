@@ -1,0 +1,29 @@
+{
+    "post_id": "screenshot_051306065d28",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Congratulationsl You have been selected for a work-from-home job. Earn ,000 every month: registration fee. Pay",
+    "images": [
+        "data/raw/screenshots/screenshot_051306065d28.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T04:48:35.534950+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.7329020023530634,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "quality_score": 0.7329020023530634,
+        "quality_level": "medium",
+        "image_format": "PNG",
+        "image_width": 1400,
+        "image_height": 320,
+        "image_size_bytes": 19489,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    }
+}

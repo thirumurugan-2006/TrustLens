@@ -1,0 +1,62 @@
+{
+  "FINANCIAL": {
+    "LOW": 12,
+    "MEDIUM": 36,
+    "HIGH": 126,
+    "INSUFFICIENT": 6
+  },
+  "JOB": {
+    "LOW": 12,
+    "MEDIUM": 36,
+    "HIGH": 126,
+    "INSUFFICIENT": 6
+  },
+  "SHOPPING": {
+    "LOW": 6,
+    "MEDIUM": 36,
+    "HIGH": 126,
+    "INSUFFICIENT": 6
+  },
+  "GIVEAWAY": {
+    "LOW": 6,
+    "MEDIUM": 24,
+    "HIGH": 120,
+    "INSUFFICIENT": 0
+  },
+  "PAYMENT": {
+    "LOW": 6,
+    "MEDIUM": 36,
+    "HIGH": 126,
+    "INSUFFICIENT": 6
+  },
+  "CREDENTIAL": {
+    "LOW": 6,
+    "MEDIUM": 24,
+    "HIGH": 120,
+    "INSUFFICIENT": 0
+  },
+  "IMPERSONATION": {
+    "LOW": 6,
+    "MEDIUM": 24,
+    "HIGH": 120,
+    "INSUFFICIENT": 0
+  },
+  "OTHER": {
+    "LOW": 6,
+    "MEDIUM": 24,
+    "HIGH": 126,
+    "INSUFFICIENT": 6
+  },
+  "LEGITIMATE": {
+    "LOW": 120,
+    "MEDIUM": 0,
+    "HIGH": 0,
+    "INSUFFICIENT": 0
+  },
+  "INSUFFICIENT": {
+    "LOW": 0,
+    "MEDIUM": 0,
+    "HIGH": 0,
+    "INSUFFICIENT": 120
+  }
+}

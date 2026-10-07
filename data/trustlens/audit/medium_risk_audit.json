@@ -1,0 +1,28 @@
+{
+  "total_medium_records": 240,
+  "language_distribution": {
+    "en": 80,
+    "ta": 40,
+    "hi": 40,
+    "ta-en": 40,
+    "hi-en": 40
+  },
+  "domain_distribution": {
+    "FINANCIAL": 36,
+    "JOB": 36,
+    "SHOPPING": 36,
+    "GIVEAWAY": 24,
+    "PAYMENT": 36,
+    "CREDENTIAL": 24,
+    "IMPERSONATION": 24,
+    "OTHER": 24,
+    "LEGITIMATE": 0,
+    "INSUFFICIENT": 0
+  },
+  "split_distribution": {
+    "train": 168,
+    "validation": 36,
+    "test": 36
+  },
+  "criteria_compliance": "Verified observable risk indicators present without conclusive fraud establishment."
+}

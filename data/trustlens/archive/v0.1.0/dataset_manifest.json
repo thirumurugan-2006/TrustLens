@@ -1,0 +1,87 @@
+{
+  "dataset_id": "trustlens_v0.1.0_dev",
+  "dataset_version": "v0.1.0",
+  "schema_version": "1.0.0",
+  "guideline_version": "1.0.0",
+  "created_at": "2026-10-07T06:46:36.699190+00:00",
+  "source_summary": "TrustLens multilingual multimodal scam-risk dataset",
+  "license": "Open Government Data License (OGDL) / CC-BY-4.0 / Research Permitted",
+  "record_count": 1200,
+  "total_records": 1200,
+  "train_count": 840,
+  "validation_count": 180,
+  "test_count": 180,
+  "language_distribution": {
+    "en": 280,
+    "ta": 240,
+    "hi": 280,
+    "ta-en": 160,
+    "hi-en": 240
+  },
+  "claim_distribution": {
+    "FINANCIAL": 240,
+    "JOB": 120,
+    "SHOPPING": 120,
+    "GIVEAWAY": 120,
+    "PAYMENT": 120,
+    "CREDENTIAL": 120,
+    "IMPERSONATION": 120,
+    "OTHER": 240
+  },
+  "risk_distribution": {
+    "HIGH": 960,
+    "LOW": 120,
+    "INSUFFICIENT": 120
+  },
+  "evidence_distribution": {
+    "CONTRADICTS": 960,
+    "SUPPORTS": 120,
+    "INSUFFICIENT": 120
+  },
+  "category_distribution": {
+    "FINANCIAL": 120,
+    "JOB": 120,
+    "SHOPPING": 120,
+    "GIVEAWAY": 120,
+    "PAYMENT": 120,
+    "CREDENTIAL": 120,
+    "IMPERSONATION": 120,
+    "OTHER": 120,
+    "LEGITIMATE": 120,
+    "INSUFFICIENT": 120
+  },
+  "source_distribution": {
+    "PUBLIC_DATASET": 1080,
+    "LOCAL_DATA": 120
+  },
+  "synthetic_count": 0,
+  "real_count": 1200,
+  "duplicate_count": 1188,
+  "rejected_count": 0,
+  "cluster_count": 200,
+  "annotation_count": 1200,
+  "double_annotated_count": 172,
+  "adjudicated_count": 172,
+  "label_distribution": {
+    "risk_HIGH": 960,
+    "risk_LOW": 120,
+    "risk_INSUFFICIENT": 120,
+    "claim_FINANCIAL": 240,
+    "claim_JOB": 120,
+    "claim_SHOPPING": 120,
+    "claim_GIVEAWAY": 120,
+    "claim_PAYMENT": 120,
+    "claim_CREDENTIAL": 120,
+    "claim_IMPERSONATION": 120,
+    "claim_OTHER": 240
+  },
+  "splits_distribution": {
+    "train": 840,
+    "validation": 180,
+    "test": 180
+  },
+  "leakage_group_counts": {
+    "campaign": 960,
+    "translation": 1200
+  }
+}

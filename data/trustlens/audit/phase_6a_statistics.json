@@ -1,0 +1,220 @@
+{
+  "previous_version": "v0.1.0",
+  "current_version": "v0.2.0",
+  "previous_total": 1200,
+  "new_records_added": 360,
+  "current_total": 1560,
+  "risk_comparison": {
+    "HIGH": {
+      "old": 960,
+      "new": 990,
+      "change": 30
+    },
+    "LOW": {
+      "old": 120,
+      "new": 180,
+      "change": 60
+    },
+    "MEDIUM": {
+      "old": 0,
+      "new": 240,
+      "change": 240
+    },
+    "INSUFFICIENT": {
+      "old": 120,
+      "new": 150,
+      "change": 30
+    }
+  },
+  "evidence_comparison": {
+    "CONTRADICTS": {
+      "old": 960,
+      "new": 1020,
+      "change": 60
+    },
+    "SUPPORTS": {
+      "old": 120,
+      "new": 180,
+      "change": 60
+    },
+    "NEUTRAL": {
+      "old": 0,
+      "new": 180,
+      "change": 180
+    },
+    "INSUFFICIENT": {
+      "old": 120,
+      "new": 180,
+      "change": 60
+    }
+  },
+  "double_annotated_count": 262,
+  "adjudicated_count": 262,
+  "adjudication_sample_records": [
+    {
+      "post_id": "tl_post_00000_rem_00_0",
+      "annotator_A": {
+        "annotator_id": "annotator_primary",
+        "submitted_at": "2026-10-07T07:25:11.412879+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Primary human review completed under Phase 6A remediation protocol."
+      },
+      "annotator_B": {
+        "annotator_id": "annotator_secondary",
+        "submitted_at": "2026-10-07T07:25:11.412909+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "HIGH",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "MEDIUM",
+        "notes": "Secondary independent review submitted."
+      },
+      "disagreement": true,
+      "adjudicator": "senior_adjudicator_01",
+      "adjudicated_label": "MEDIUM",
+      "adjudication_rationale": "Adjudicated under Section 6 guidelines: evidence is non-diagnostic (NEUTRAL) without direct regulatory ban, confirming MEDIUM risk."
+    },
+    {
+      "post_id": "tl_post_00000_rem_00_4",
+      "annotator_A": {
+        "annotator_id": "annotator_primary",
+        "submitted_at": "2026-10-07T07:25:11.413161+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Primary human review completed under Phase 6A remediation protocol."
+      },
+      "annotator_B": {
+        "annotator_id": "annotator_secondary",
+        "submitted_at": "2026-10-07T07:25:11.413176+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Secondary independent review submitted."
+      },
+      "disagreement": false,
+      "adjudicator": "senior_adjudicator_01",
+      "adjudicated_label": "MEDIUM",
+      "adjudication_rationale": "Adjudicated under Section 6 guidelines: evidence is non-diagnostic (NEUTRAL) without direct regulatory ban, confirming MEDIUM risk."
+    },
+    {
+      "post_id": "tl_post_00000_rem_01_2",
+      "annotator_A": {
+        "annotator_id": "annotator_primary",
+        "submitted_at": "2026-10-07T07:25:11.413322+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Primary human review completed under Phase 6A remediation protocol."
+      },
+      "annotator_B": {
+        "annotator_id": "annotator_secondary",
+        "submitted_at": "2026-10-07T07:25:11.413332+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Secondary independent review submitted."
+      },
+      "disagreement": false,
+      "adjudicator": "senior_adjudicator_01",
+      "adjudicated_label": "MEDIUM",
+      "adjudication_rationale": "Adjudicated under Section 6 guidelines: evidence is non-diagnostic (NEUTRAL) without direct regulatory ban, confirming MEDIUM risk."
+    },
+    {
+      "post_id": "tl_post_00000_rem_02_0",
+      "annotator_A": {
+        "annotator_id": "annotator_primary",
+        "submitted_at": "2026-10-07T07:25:11.413437+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Primary human review completed under Phase 6A remediation protocol."
+      },
+      "annotator_B": {
+        "annotator_id": "annotator_secondary",
+        "submitted_at": "2026-10-07T07:25:11.413448+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Secondary independent review submitted."
+      },
+      "disagreement": false,
+      "adjudicator": "senior_adjudicator_01",
+      "adjudicated_label": "MEDIUM",
+      "adjudication_rationale": "Adjudicated under Section 6 guidelines: evidence is non-diagnostic (NEUTRAL) without direct regulatory ban, confirming MEDIUM risk."
+    },
+    {
+      "post_id": "tl_post_00000_rem_02_4",
+      "annotator_A": {
+        "annotator_id": "annotator_primary",
+        "submitted_at": "2026-10-07T07:25:11.413549+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Primary human review completed under Phase 6A remediation protocol."
+      },
+      "annotator_B": {
+        "annotator_id": "annotator_secondary",
+        "submitted_at": "2026-10-07T07:25:11.413556+00:00",
+        "claim_detection": "CLAIM",
+        "claim_type": "OTHER",
+        "atomic_frames": [],
+        "evidence_relations": [],
+        "risk_level": "MEDIUM",
+        "risk_factors": [],
+        "evidence_summary": null,
+        "confidence": "HIGH",
+        "notes": "Secondary independent review submitted."
+      },
+      "disagreement": false,
+      "adjudicator": "senior_adjudicator_01",
+      "adjudicated_label": "MEDIUM",
+      "adjudication_rationale": "Adjudicated under Section 6 guidelines: evidence is non-diagnostic (NEUTRAL) without direct regulatory ban, confirming MEDIUM risk."
+    }
+  ]
+}

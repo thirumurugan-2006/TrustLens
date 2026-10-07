@@ -1,6 +1,6 @@
 import json
 from typing import List
-from app.input.schemas import UniversalSocialPost
+from app.schemas import NormalizedPost as UniversalSocialPost
 from app.input.platform.adapters.generic_adapter import GenericAdapter
 
 class JSONLoader:

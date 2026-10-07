@@ -1,6 +1,6 @@
 import csv
 from typing import List, Dict
-from app.input.schemas import UniversalSocialPost
+from app.schemas import NormalizedPost as UniversalSocialPost
 from app.input.platform.adapters.generic_adapter import GenericAdapter
 
 class CSVLoader:

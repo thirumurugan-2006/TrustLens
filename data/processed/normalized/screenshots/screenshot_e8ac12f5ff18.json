@@ -1,0 +1,18 @@
+{
+    "post_id": "screenshot_e8ac12f5ff18",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Congratulations! Pay registration fee.",
+    "images": [
+        "data/raw/screenshots/screenshot_e8ac12f5ff18.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T04:46:22.780439+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.8500000000000001
+    }
+}

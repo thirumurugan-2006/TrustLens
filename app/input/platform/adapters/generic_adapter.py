@@ -1,5 +1,5 @@
 from app.input.platform.base import BasePlatformAdapter
-from app.input.schemas import UniversalSocialPost, Platform, PostType, AcquisitionMethod, AuthorInfo, PostContent
+from app.schemas import NormalizedPost as UniversalSocialPost, Platform, PostType, AcquisitionMethod, AuthorInfo, PostContent
 import uuid
 
 class GenericAdapter(BasePlatformAdapter):

@@ -1,0 +1,32 @@
+{
+  "en": {
+    "LOW": 60,
+    "MEDIUM": 80,
+    "HIGH": 250,
+    "INSUFFICIENT": 10
+  },
+  "ta": {
+    "LOW": 10,
+    "MEDIUM": 40,
+    "HIGH": 245,
+    "INSUFFICIENT": 5
+  },
+  "hi": {
+    "LOW": 50,
+    "MEDIUM": 40,
+    "HIGH": 245,
+    "INSUFFICIENT": 5
+  },
+  "ta-en": {
+    "LOW": 50,
+    "MEDIUM": 40,
+    "HIGH": 125,
+    "INSUFFICIENT": 5
+  },
+  "hi-en": {
+    "LOW": 10,
+    "MEDIUM": 40,
+    "HIGH": 125,
+    "INSUFFICIENT": 125
+  }
+}

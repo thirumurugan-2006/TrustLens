@@ -1,0 +1,82 @@
+[
+  {
+    "task": "T-1 Claim Detection",
+    "dataset": "claims.jsonl",
+    "labels": "CLAIM / NON_CLAIM",
+    "split": "Train: 1092, Val: 234, Test: 234",
+    "evaluation": "Accuracy, Macro-F1",
+    "status": "READY"
+  },
+  {
+    "task": "T-2 Claim Extraction",
+    "dataset": "claims.jsonl",
+    "labels": "source_span offsets",
+    "split": "Train: 1092, Val: 234, Test: 234",
+    "evaluation": "Token F1, Span Exact Match",
+    "status": "READY_WITH_LIMITATIONS"
+  },
+  {
+    "task": "T-3 Atomic Decomposition",
+    "dataset": "claims.jsonl",
+    "labels": "semantic frames (slots)",
+    "split": "Train: 1092, Val: 234, Test: 234",
+    "evaluation": "Slot F1, Frame Accuracy",
+    "status": "READY_WITH_LIMITATIONS"
+  },
+  {
+    "task": "T-4 Query Synthesis",
+    "dataset": "processed/retrieval/",
+    "labels": "1,200 search queries",
+    "split": "Train: 846, Val: 180, Test: 174",
+    "evaluation": "BLEU, ROUGE, Recall@K",
+    "status": "READY_WITH_LIMITATIONS"
+  },
+  {
+    "task": "T-5 Retrieval & Ranking",
+    "dataset": "processed/retrieval/",
+    "labels": "1,200 pos / 3,600 neg triplets",
+    "split": "Train: 846, Val: 180, Test: 174",
+    "evaluation": "Recall@K, MRR, nDCG@K",
+    "status": "READY"
+  },
+  {
+    "task": "T-6 Evidence Verification",
+    "dataset": "evidence.jsonl",
+    "labels": "SUPPORTS / CONTRADICTS / NEUTRAL / INSUFFICIENT",
+    "split": "Train: 1092, Val: 234, Test: 234",
+    "evaluation": "Macro-F1, Per-class F1",
+    "status": "READY"
+  },
+  {
+    "task": "T-7 GAT / Graph",
+    "dataset": "processed/graphs/",
+    "labels": "Heterogeneous subgraphs (7,800 nodes)",
+    "split": "Train: 1092, Val: 234, Test: 234",
+    "evaluation": "Macro-F1, Graph Classification",
+    "status": "READY_WITH_LIMITATIONS"
+  },
+  {
+    "task": "T-8 Final Risk Model",
+    "dataset": "processed/features/",
+    "labels": "HIGH / MEDIUM / LOW / INSUFFICIENT",
+    "split": "Train: 1092, Val: 234, Test: 234",
+    "evaluation": "Macro-F1, Multi-class ROC-AUC",
+    "status": "READY"
+  },
+  {
+    "task": "T-9 Calibration",
+    "dataset": "Model validation predictions (pending)",
+    "labels": "Probability scores",
+    "split": "Validation: 234",
+    "evaluation": "ECE, Brier Score",
+    "status": "CALIBRATION_NOT_YET_AVAILABLE"
+  },
+  {
+    "task": "T-10 Abstention",
+    "dataset": "Model prediction confidence (pending)",
+    "labels": "Coverage threshold",
+    "split": "Validation: 234, Test: 234",
+    "evaluation": "Selective Accuracy, Risk-Coverage",
+    "status": "READY_FOR_MODEL_PHASE"
+  }
+]

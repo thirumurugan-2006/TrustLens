@@ -1,6 +1,6 @@
 import pytest
 from app.pipeline.claim_pipeline import TrustLensClaimPipeline
-from app.input.schemas import NormalizedPost
+from app.input.schemas import NormalizedPost, Platform, PostType, AuthorInfo, PostContent, PostMedia
 
 @pytest.fixture
 def pipeline():
@@ -9,12 +9,12 @@ def pipeline():
 def make_post(text: str, lang: str = "en") -> NormalizedPost:
     return NormalizedPost(
         post_id="post_123",
-        platform="test",
+        platform=Platform.generic,
+        post_type=PostType.text,
+        content=PostContent(text=text if text is not None else ""),
+        media=PostMedia(),
         source_url="http://test",
-        author="test_author",
-        title="test_title",
-        text=text,
-        images=[],
+        author=AuthorInfo(),
         comments=[],
         timestamp="2023-01-01T00:00:00Z",
         metadata={"language_analysis": {"primary_language": lang, "is_code_mixed": False}}
@@ -41,7 +41,7 @@ def test_full_pipeline_conditional(pipeline):
     result = pipeline.process(post)
     assert len(result.claims) == 1
     assert len(result.atomic_claims) == 2
-    assert result.atomic_claims[0].metadata.get("relationship") == "condition -> outcome"
+    assert result.atomic_claims[0].relationships[0]["type"] == "promised_outcome"
 
 def test_full_pipeline_no_claims(pipeline):
     post = make_post("   ")

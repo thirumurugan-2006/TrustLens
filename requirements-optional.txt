@@ -1,0 +1,13 @@
+# Optional and Experimental Integrations
+praw  # Reddit API
+beautifulsoup4  # HTML Parsing
+regex
+langdetect
+
+# PaddleOCR alternative (Optional)
+opencv-python-headless
+paddlepaddle==3.3.1
+paddleocr==3.7.0
+
+# Testing
+pytest

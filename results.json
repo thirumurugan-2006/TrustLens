@@ -1,0 +1,66 @@
+{
+    "XLM-R": {
+        "English": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 49.46
+        },
+        "Tamil": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 53.75
+        },
+        "Hindi": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 49.67
+        },
+        "Tamil-English": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 40.48
+        },
+        "Tanglish": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 44.33
+        },
+        "Hinglish": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 44.94
+        }
+    },
+    "MuRIL": {
+        "English": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 79.72
+        },
+        "Tamil": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 50.51
+        },
+        "Hindi": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 48.09
+        },
+        "Tamil-English": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 58.94
+        },
+        "Tanglish": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 79.25
+        },
+        "Hinglish": {
+            "success": true,
+            "embedding_dimension": 768,
+            "latency_ms": 49.86
+        }
+    }
+}

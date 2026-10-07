@@ -1,0 +1,26 @@
+{
+    "post_id": "screenshot_1f36949edf32",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Screenshot text",
+    "images": [
+        "data/raw/screenshots/screenshot_1f36949edf32.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T04:47:33.071383+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.95,
+        "ocr_quality": "high",
+        "ocr_warning": false,
+        "quality_score": 0.95,
+        "quality_level": "high",
+        "image_format": "PNG",
+        "image_width": 50,
+        "image_height": 50,
+        "image_size_bytes": 160
+    }
+}

@@ -1,0 +1,543 @@
+{
+  "$defs": {
+    "AnnotationConfidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ],
+      "title": "AnnotationConfidence",
+      "type": "string"
+    },
+    "AnnotationMetadata": {
+      "properties": {
+        "annotation_id": {
+          "title": "Annotation Id",
+          "type": "string"
+        },
+        "annotator_id": {
+          "title": "Annotator Id",
+          "type": "string"
+        },
+        "annotation_timestamp": {
+          "title": "Annotation Timestamp",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "guideline_version": {
+          "default": "1.0.0",
+          "title": "Guideline Version",
+          "type": "string"
+        },
+        "review_status": {
+          "$ref": "#/$defs/ReviewStatus",
+          "default": "APPROVED"
+        },
+        "confidence": {
+          "$ref": "#/$defs/AnnotationConfidence",
+          "default": "HIGH"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "annotator_id"
+      ],
+      "title": "AnnotationMetadata",
+      "type": "object"
+    },
+    "ClaimType": {
+      "enum": [
+        "FINANCIAL",
+        "JOB",
+        "SHOPPING",
+        "GIVEAWAY",
+        "PAYMENT",
+        "CREDENTIAL",
+        "IMPERSONATION",
+        "OTHER",
+        "UNCLASSIFIED"
+      ],
+      "title": "ClaimType",
+      "type": "string"
+    },
+    "ProvenanceMetadata": {
+      "properties": {
+        "source_type": {
+          "$ref": "#/$defs/ProvenanceSourceType"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "source_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Id"
+        },
+        "collection_method": {
+          "default": "manual",
+          "title": "Collection Method",
+          "type": "string"
+        },
+        "license": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "License"
+        },
+        "collection_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Collection Date"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceMetadata",
+      "type": "object"
+    },
+    "ProvenanceSourceType": {
+      "enum": [
+        "PUBLIC_DATASET",
+        "TRUSTLENS_ANNOTATED",
+        "SYNTHETIC",
+        "TRANSLATED",
+        "HUMAN_REVIEWED",
+        "LOCAL_DATA",
+        "USER_PROVIDED"
+      ],
+      "title": "ProvenanceSourceType",
+      "type": "string"
+    },
+    "ReviewStatus": {
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "FLAGGED_FOR_REVIEW"
+      ],
+      "title": "ReviewStatus",
+      "type": "string"
+    },
+    "SourceSpan": {
+      "properties": {
+        "start": {
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "title": "End",
+          "type": "integer"
+        },
+        "source_sentence": {
+          "title": "Source Sentence",
+          "type": "string"
+        },
+        "source_index": {
+          "title": "Source Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "source_sentence",
+        "source_index"
+      ],
+      "title": "SourceSpan",
+      "type": "object"
+    },
+    "SplitMetadata": {
+      "properties": {
+        "split": {
+          "$ref": "#/$defs/SplitName"
+        },
+        "source_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Group Id"
+        },
+        "campaign_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Campaign Group Id"
+        },
+        "post_family_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Post Family Id"
+        },
+        "image_family_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Family Id"
+        },
+        "translation_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translation Group Id"
+        }
+      },
+      "required": [
+        "split"
+      ],
+      "title": "SplitMetadata",
+      "type": "object"
+    },
+    "SplitName": {
+      "enum": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "title": "SplitName",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "atomic_claim_id": {
+      "title": "Atomic Claim Id",
+      "type": "string"
+    },
+    "parent_claim_id": {
+      "title": "Parent Claim Id",
+      "type": "string"
+    },
+    "original_text": {
+      "title": "Original Text",
+      "type": "string"
+    },
+    "normalized_text": {
+      "title": "Normalized Text",
+      "type": "string"
+    },
+    "claim_type": {
+      "default": "UNKNOWN",
+      "title": "Claim Type",
+      "type": "string"
+    },
+    "subject": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subject"
+    },
+    "predicate": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Predicate"
+    },
+    "object": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Object"
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Value"
+    },
+    "unit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Unit"
+    },
+    "currency": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Currency"
+    },
+    "temporal_context": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Temporal Context"
+    },
+    "polarity": {
+      "default": "POSITIVE",
+      "title": "Polarity",
+      "type": "string"
+    },
+    "negated": {
+      "default": false,
+      "title": "Negated",
+      "type": "boolean"
+    },
+    "entities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Entities",
+      "type": "array"
+    },
+    "conditions": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Conditions"
+    },
+    "relationships": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Relationships",
+      "type": "array"
+    },
+    "attribution": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Attribution"
+    },
+    "modality": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Modality"
+    },
+    "certainty": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Certainty"
+    },
+    "language": {
+      "default": "unknown",
+      "title": "Language",
+      "type": "string"
+    },
+    "script": {
+      "default": "unknown",
+      "title": "Script",
+      "type": "string"
+    },
+    "source_span": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SourceSpan"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "verifiable": {
+      "default": false,
+      "title": "Verifiable",
+      "type": "boolean"
+    },
+    "decomposition_confidence": {
+      "default": 1.0,
+      "title": "Decomposition Confidence",
+      "type": "number"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    },
+    "claim_type_enum": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ClaimType"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "provenance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ProvenanceMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "split_info": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SplitMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "annotation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AnnotationMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "is_example": {
+      "default": false,
+      "title": "Is Example",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "parent_claim_id",
+    "original_text",
+    "normalized_text"
+  ],
+  "title": "TrainingAtomicClaim",
+  "type": "object"
+}

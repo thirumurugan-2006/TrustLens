@@ -1,0 +1,109 @@
+{
+    "post_id": "screenshot_8a7f4730453a",
+    "platform": "screenshot",
+    "post_type": "image_text",
+    "source_url": null,
+    "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+    },
+    "content": {
+        "title": null,
+        "text": "Congratulations! Pay registration fee.",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+    },
+    "media": {
+        "images": [
+            "data/raw/screenshots/screenshot_8a7f4730453a.png"
+        ],
+        "videos": [],
+        "audio": []
+    },
+    "comments": [],
+    "replies": [],
+    "quoted_content": null,
+    "reposted_content": null,
+    "timestamp": "2026-10-07T05:50:07.469549+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "not_installed",
+        "ocr_status": "SUCCESS",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "Congratulations! Pay registration fee.",
+        "ocr_normalized_text": "Congratulations! Pay registration fee.",
+        "ocr_confidence": 0.8500000000000001,
+        "ocr_quality": "high",
+        "ocr_warning": false,
+        "ocr_unreliable": false,
+        "ocr_attempts": 1,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_selected_preprocessing": "original",
+        "ocr_selection_score": 0.7765,
+        "ocr_detection_count": 2,
+        "ocr_text_length": 38,
+        "ocr_script_distribution": {
+            "Tamil": 0.0,
+            "Latin": 1.0,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.8500000000000001,
+                "detection_count": 2,
+                "text_length": 38,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.7765,
+                "usable": true
+            }
+        ],
+        "quality_score": 0.8500000000000001,
+        "quality_level": "high",
+        "language_analysis": {
+            "primary_language": "en",
+            "language_confidence": 1.0,
+            "secondary_languages": [],
+            "scripts": [
+                "Latin"
+            ],
+            "script_distribution": {
+                "Latin": 1.0,
+                "Tamil": 0.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "ensemble",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 200,
+        "image_height": 80,
+        "image_size_bytes": 286
+    },
+    "acquisition": "screenshot",
+    "text": "Congratulations! Pay registration fee.",
+    "title": null,
+    "images": [
+        "data/raw/screenshots/screenshot_8a7f4730453a.png"
+    ]
+}

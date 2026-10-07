@@ -1,0 +1,110 @@
+[
+  {
+    "source_id": "src_sebi_advisories",
+    "source_name": "SEBI Investor Alerts and Fraud Bulletins",
+    "source_type": "PUBLIC_DATASET",
+    "license": "Open Government Data License - India (OGDL)",
+    "permission_status": "APPROVED",
+    "collection_method": "regulatory_bulletin_extract",
+    "language": ["en", "hi"],
+    "category": ["financial", "investment"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Official public advisories on fraudulent unregulated investment schemes and unregistered advisory telegram channels."
+  },
+  {
+    "source_id": "src_rbi_alert_list",
+    "source_name": "RBI Cautionary Sachet Portal Public List",
+    "source_type": "PUBLIC_DATASET",
+    "license": "Open Government Data License - India (OGDL)",
+    "permission_status": "APPROVED",
+    "collection_method": "official_publication",
+    "language": ["en", "hi"],
+    "category": ["financial", "payment"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Reserve Bank of India cautionary list of entities neither authorised to deal in forex nor authorised to operate electronic trading platforms."
+  },
+  {
+    "source_id": "src_cert_in_advisories",
+    "source_name": "CERT-In Cyber Security Alerts",
+    "source_type": "PUBLIC_DATASET",
+    "license": "Open Government Data License - India (OGDL)",
+    "permission_status": "APPROVED",
+    "collection_method": "security_advisory",
+    "language": ["en", "hi"],
+    "category": ["credential", "impersonation", "job"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Advisories regarding phishing, part-time job fraud apps, APK malware campaigns, and fake customer care portals."
+  },
+  {
+    "source_id": "src_consumer_forum_multilingual",
+    "source_name": "National Consumer Helpline Public Grievance Archive",
+    "source_type": "PUBLIC_DATASET",
+    "license": "Public Domain / Research Exemption",
+    "permission_status": "APPROVED",
+    "collection_method": "public_archive",
+    "language": ["en", "ta", "hi"],
+    "category": ["shopping", "payment", "job"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Anonymized consumer grievance records detailing online shopping fraud, non-delivery scams, and counterfeit websites."
+  },
+  {
+    "source_id": "src_verified_social_warnings",
+    "source_name": "TrustLens Multilingual Scam Verification Archive",
+    "source_type": "TRUSTLENS_ANNOTATED",
+    "license": "CC-BY-4.0",
+    "permission_status": "APPROVED",
+    "collection_method": "curated_investigative_cases",
+    "language": ["en", "ta", "hi", "ta-en", "hi-en"],
+    "category": ["financial", "job", "giveaway", "impersonation", "payment"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Adjudicated and double-annotated multi-lingual social media scam posts across Tamil, Hindi, Tanglish, and Hinglish."
+  },
+  {
+    "source_id": "src_legitimate_hard_negatives",
+    "source_name": "Verified Institutional Announcements & Legitimate Offers",
+    "source_type": "LOCAL_DATA",
+    "license": "Public Information / Fair Use",
+    "permission_status": "APPROVED",
+    "collection_method": "verified_public_feeds",
+    "language": ["en", "ta", "hi", "ta-en", "hi-en"],
+    "category": ["financial", "job", "shopping", "giveaway", "payment"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Authentic legitimate bank alerts, mutual fund notices, e-commerce sale announcements, and government recruitment notices (hard negatives)."
+  },
+  {
+    "source_id": "src_pending_unreviewed",
+    "source_name": "Unverified Third Party Scraping Feed",
+    "source_type": "USER_PROVIDED",
+    "license": "PENDING_REVIEW",
+    "permission_status": "LICENSE_REVIEW_REQUIRED",
+    "collection_method": "unverified_feed",
+    "language": ["en"],
+    "category": ["general"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Candidate data awaiting legal and license clearance. Strictly barred from training splits until permission_status is APPROVED."
+  },
+  {
+    "source_id": "src_mca_company_registry",
+    "source_name": "Ministry of Corporate Affairs Public Registry & Corporate Disclosure Archive",
+    "source_type": "PUBLIC_DATASET",
+    "license": "Open Government Data License - India (OGDL)",
+    "permission_status": "APPROVED",
+    "collection_method": "public_corporate_records",
+    "language": ["en", "hi"],
+    "category": ["financial", "job", "shopping", "payment"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Public corporate filings and entity registration records providing baseline entity facts that are non-diagnostic for specific online promotional claims (NEUTRAL evidence)."
+  },
+  {
+    "source_id": "src_consumer_grievance_unresolved",
+    "source_name": "Public Consumer Complaints & Dispute Bulletin",
+    "source_type": "PUBLIC_DATASET",
+    "license": "Public Domain / Research Exemption",
+    "permission_status": "APPROVED",
+    "collection_method": "public_grievance_bulletin",
+    "language": ["en", "ta", "hi"],
+    "category": ["financial", "job", "shopping", "payment", "giveaway", "credential", "impersonation", "other"],
+    "collection_date": "2026-10-07T00:00:00Z",
+    "notes": "Unresolved consumer disputes and unverified commercial offerings exhibiting observable risk indicators without definitive criminal/regulatory establishment (MEDIUM risk)."
+  }
+]

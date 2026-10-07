@@ -1,0 +1,84 @@
+{
+    "xlm-roberta": {
+        "english": {
+            "quality": "valid",
+            "latency": 265.5209138393402,
+            "dimension": 768
+        },
+        "tamil": {
+            "quality": "valid",
+            "latency": 0.11577486991882324,
+            "dimension": 768
+        },
+        "tamil_english": {
+            "quality": "valid",
+            "latency": 0.1032869815826416,
+            "dimension": 768
+        },
+        "tanglish": {
+            "quality": "valid",
+            "latency": 0.11704063415527344,
+            "dimension": 768
+        },
+        "short": {
+            "quality": "valid",
+            "latency": 0.054174184799194336,
+            "dimension": 768
+        },
+        "empty": "Passed (raised ValueError correctly)",
+        "long": {
+            "quality": "valid",
+            "latency": 0.27457714080810547,
+            "dimension": 768
+        },
+        "cross_language_similarities": {
+            "english_vs_tamil": 0.9955104896994287,
+            "tamil_english_vs_tanglish": 0.9943052782766332
+        },
+        "batch_test": {
+            "num_results": 2,
+            "latency": 0.19999170303344727
+        }
+    },
+    "muril": {
+        "english": {
+            "quality": "valid",
+            "latency": 213.29133915901184,
+            "dimension": 768
+        },
+        "tamil": {
+            "quality": "valid",
+            "latency": 0.14101529121398926,
+            "dimension": 768
+        },
+        "tamil_english": {
+            "quality": "valid",
+            "latency": 0.10016942024230957,
+            "dimension": 768
+        },
+        "tanglish": {
+            "quality": "valid",
+            "latency": 0.12322258949279785,
+            "dimension": 768
+        },
+        "short": {
+            "quality": "valid",
+            "latency": 0.0903773307800293,
+            "dimension": 768
+        },
+        "empty": "Passed (raised ValueError correctly)",
+        "long": {
+            "quality": "valid",
+            "latency": 0.3041982650756836,
+            "dimension": 768
+        },
+        "cross_language_similarities": {
+            "english_vs_tamil": 0.9944085537398026,
+            "tamil_english_vs_tanglish": 0.9897680151751721
+        },
+        "batch_test": {
+            "num_results": 2,
+            "latency": 0.16697025299072266
+        }
+    }
+}

@@ -1,0 +1,846 @@
+{
+  "schema_version": "1.0.0",
+  "total_features": 92,
+  "feature_groups": [
+    "IMAGE",
+    "CONTRADICTION",
+    "TEXT",
+    "GRAPH",
+    "RETRIEVAL",
+    "EVIDENCE",
+    "SCAM_SIGNAL",
+    "CLAIM",
+    "SOURCE_DOMAIN",
+    "LANGUAGE"
+  ],
+  "features": [
+    {
+      "name": "text_length",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Total character length of raw post text",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_empty",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "word_count",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Number of whitespace-delimited tokens in post text",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_empty",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "sentence_count",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Number of sentences derived by sentence boundary punctuation",
+      "source": "post.content.text",
+      "missing_policy": "one_if_unsegmented",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "uppercase_ratio",
+      "group": "TEXT",
+      "dtype": "float",
+      "description": "Proportion of uppercase alphabet characters to total alphabetic characters",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_no_alpha",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "digit_ratio",
+      "group": "TEXT",
+      "dtype": "float",
+      "description": "Proportion of numeric digit characters to total length",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_empty",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "punctuation_ratio",
+      "group": "TEXT",
+      "dtype": "float",
+      "description": "Proportion of punctuation characters to total length",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_empty",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "url_count_in_text",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Count of embedded URLs and http/https hyperlinks in text",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "phone_count",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Count of observable phone numbers or country dial codes (+91)",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "email_count",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Count of email addresses formatted with @ and valid domains",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "currency_symbol_count",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Count of currency symbols (₹, $, Rs, INR, USD)",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "exclamation_count",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Count of exclamation marks (!) in post text",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "question_count",
+      "group": "TEXT",
+      "dtype": "int",
+      "description": "Count of question marks (?) in post text",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "language",
+      "group": "LANGUAGE",
+      "dtype": "category",
+      "description": "Primary linguistic code (en, ta, hi, ta-en, hi-en)",
+      "source": "post.language_info.primary",
+      "missing_policy": "en_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "language_id",
+      "group": "LANGUAGE",
+      "dtype": "int",
+      "description": "Integer mapping of primary language",
+      "source": "post.language_info.primary",
+      "missing_policy": "zero_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "script",
+      "group": "LANGUAGE",
+      "dtype": "category",
+      "description": "Primary writing script (Latin, Tamil, Devanagari)",
+      "source": "post.language_info.script",
+      "missing_policy": "latin_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "is_code_mixed",
+      "group": "LANGUAGE",
+      "dtype": "bool",
+      "description": "Flag indicating multilingual code-mixing (e.g., Hinglish, Tanglish)",
+      "source": "post.language_info.code_mixed",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "is_transliterated",
+      "group": "LANGUAGE",
+      "dtype": "bool",
+      "description": "Flag indicating transliterated text into Latin script",
+      "source": "post.language_info.transliterated",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "language_confidence",
+      "group": "LANGUAGE",
+      "dtype": "float",
+      "description": "Confidence score of language identification",
+      "source": "post.language_info.metadata",
+      "missing_policy": "one_if_unspecified",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Total count of claims extracted from post",
+      "source": "post.claims",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "atomic_claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Total count of atomic claim predicates",
+      "source": "claims.atomic_claims",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "verifiable_claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Count of extracted claims marked verifiable",
+      "source": "claims.check_worthiness",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "non_verifiable_claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Count of extracted claims marked unverifiable or opinion",
+      "source": "claims.check_worthiness",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "claim_decomposition_confidence",
+      "group": "CLAIM",
+      "dtype": "float",
+      "description": "Mean check-worthiness / decomposition confidence across claims",
+      "source": "claims.check_worthiness",
+      "missing_policy": "zero_if_no_claims",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "has_financial_claim",
+      "group": "CLAIM",
+      "dtype": "bool",
+      "description": "Flag indicating presence of at least one FINANCIAL claim",
+      "source": "claims.claim_type",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "has_job_claim",
+      "group": "CLAIM",
+      "dtype": "bool",
+      "description": "Flag indicating presence of at least one JOB / employment claim",
+      "source": "claims.claim_type",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "has_giveaway_claim",
+      "group": "CLAIM",
+      "dtype": "bool",
+      "description": "Flag indicating presence of at least one GIVEAWAY / lottery claim",
+      "source": "claims.claim_type",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "has_credential_claim",
+      "group": "CLAIM",
+      "dtype": "bool",
+      "description": "Flag indicating presence of at least one CREDENTIAL solicitation claim",
+      "source": "claims.claim_type",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "has_shopping_claim",
+      "group": "CLAIM",
+      "dtype": "bool",
+      "description": "Flag indicating presence of at least one SHOPPING e-commerce claim",
+      "source": "claims.claim_type",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "conditional_claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Count of claims containing conditional clauses or prerequisite commitments",
+      "source": "claims.atomic_claims.conditions",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "negated_claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Count of claims containing explicit negation operators",
+      "source": "claims.atomic_claims.negated",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "numeric_claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Count of claims specifying numerical return percentages or amounts",
+      "source": "claims.atomic_claims.value",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "temporal_claim_count",
+      "group": "CLAIM",
+      "dtype": "int",
+      "description": "Count of claims specifying time periods (daily, weekly, monthly)",
+      "source": "claims.atomic_claims.temporal_context",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "evidence_count",
+      "group": "EVIDENCE",
+      "dtype": "int",
+      "description": "Total count of grounded evidence items retrieved for claims",
+      "source": "evidence",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "has_evidence",
+      "group": "EVIDENCE",
+      "dtype": "bool",
+      "description": "Flag indicating if post has at least one grounded evidence item",
+      "source": "evidence",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "claims_with_evidence",
+      "group": "EVIDENCE",
+      "dtype": "int",
+      "description": "Count of claims supported by at least one evidence item",
+      "source": "evidence.claim_id",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "claims_without_evidence",
+      "group": "EVIDENCE",
+      "dtype": "int",
+      "description": "Count of claims having zero retrieved evidence",
+      "source": "claims vs evidence",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "evidence_coverage_ratio",
+      "group": "EVIDENCE",
+      "dtype": "float",
+      "description": "Proportion of claims that have grounded evidence items",
+      "source": "evidence.claim_id / claim_count",
+      "missing_policy": "zero_if_no_claims",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "evidence_source_count",
+      "group": "EVIDENCE",
+      "dtype": "int",
+      "description": "Count of distinct evidence sources cited",
+      "source": "evidence.source_type",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "independent_source_count",
+      "group": "EVIDENCE",
+      "dtype": "int",
+      "description": "Count of distinct domains among evidence source URLs",
+      "source": "evidence.source_url",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "source_diversity",
+      "group": "EVIDENCE",
+      "dtype": "float",
+      "description": "Ratio of independent sources to total evidence items",
+      "source": "independent_sources / evidence_count",
+      "missing_policy": "zero_if_no_evidence",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "retrieved_evidence_count",
+      "group": "RETRIEVAL",
+      "dtype": "int",
+      "description": "Total count of retrieved candidates in retrieval pool",
+      "source": "retrieval_dataset.eval_pool",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "relevant_evidence_count",
+      "group": "RETRIEVAL",
+      "dtype": "int",
+      "description": "Count of relevant evidence items in retrieval pool",
+      "source": "retrieval_dataset.positive",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "supporting_retrieval_count",
+      "group": "RETRIEVAL",
+      "dtype": "int",
+      "description": "Count of supporting evidence retrieved",
+      "source": "retrieval_dataset",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "contradicting_retrieval_count",
+      "group": "RETRIEVAL",
+      "dtype": "int",
+      "description": "Count of contradicting evidence retrieved",
+      "source": "retrieval_dataset",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "top_retrieval_score",
+      "group": "RETRIEVAL",
+      "dtype": "float",
+      "description": "Candidate similarity score or -1.0 if dense scores unassigned",
+      "source": "retrieval_dataset.candidate_similarity",
+      "missing_policy": "negative_one_if_missing",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "retrieval_score_available",
+      "group": "RETRIEVAL",
+      "dtype": "bool",
+      "description": "Flag indicating if dense retrieval score is populated",
+      "source": "retrieval_dataset",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "support_count",
+      "group": "CONTRADICTION",
+      "dtype": "int",
+      "description": "Count of evidence items with relation SUPPORTS",
+      "source": "evidence.relation_label",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "contradict_count",
+      "group": "CONTRADICTION",
+      "dtype": "int",
+      "description": "Count of evidence items with relation CONTRADICTS",
+      "source": "evidence.relation_label",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "neutral_count",
+      "group": "CONTRADICTION",
+      "dtype": "int",
+      "description": "Count of evidence items with relation NEUTRAL",
+      "source": "evidence.relation_label",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "insufficient_count",
+      "group": "CONTRADICTION",
+      "dtype": "int",
+      "description": "Count of evidence items with relation INSUFFICIENT",
+      "source": "evidence.relation_label",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "support_ratio",
+      "group": "CONTRADICTION",
+      "dtype": "float",
+      "description": "Ratio of SUPPORTS evidence to total evidence items",
+      "source": "support_count / evidence_count",
+      "missing_policy": "zero_if_no_evidence",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "contradiction_ratio",
+      "group": "CONTRADICTION",
+      "dtype": "float",
+      "description": "Ratio of CONTRADICTS evidence to total evidence items",
+      "source": "contradict_count / evidence_count",
+      "missing_policy": "zero_if_no_evidence",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "neutral_ratio",
+      "group": "CONTRADICTION",
+      "dtype": "float",
+      "description": "Ratio of NEUTRAL evidence to total evidence items",
+      "source": "neutral_count / evidence_count",
+      "missing_policy": "zero_if_no_evidence",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "insufficient_ratio",
+      "group": "CONTRADICTION",
+      "dtype": "float",
+      "description": "Ratio of INSUFFICIENT evidence to total evidence items",
+      "source": "insufficient_count / evidence_count",
+      "missing_policy": "zero_if_no_evidence",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "support_to_contradiction_ratio",
+      "group": "CONTRADICTION",
+      "dtype": "float",
+      "description": "Ratio of support_count to (contradict_count + 1)",
+      "source": "support_count / (contradict_count + 1)",
+      "missing_policy": "zero_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "contradiction_presence",
+      "group": "CONTRADICTION",
+      "dtype": "bool",
+      "description": "Flag indicating presence of at least one CONTRADICTS evidence item",
+      "source": "contradict_count > 0",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "support_presence",
+      "group": "CONTRADICTION",
+      "dtype": "bool",
+      "description": "Flag indicating presence of at least one SUPPORTS evidence item",
+      "source": "support_count > 0",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "evidence_relation_entropy",
+      "group": "CONTRADICTION",
+      "dtype": "float",
+      "description": "Shannon entropy over 4 relation classes (SUPPORTS, CONTRADICTS, NEUTRAL, INSUFFICIENT)",
+      "source": "relation distribution",
+      "missing_policy": "zero_if_homogeneous",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "image_count",
+      "group": "IMAGE",
+      "dtype": "int",
+      "description": "Number of attached media images",
+      "source": "post.media.images",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "has_image",
+      "group": "IMAGE",
+      "dtype": "bool",
+      "description": "Flag indicating presence of image attachments",
+      "source": "post.media.images",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "ocr_available",
+      "group": "IMAGE",
+      "dtype": "bool",
+      "description": "Flag indicating whether OCR text was successfully extracted",
+      "source": "post.images_meta.ocr_text",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "ocr_confidence",
+      "group": "IMAGE",
+      "dtype": "float",
+      "description": "Mean OCR engine confidence or -1.0 if unavailable",
+      "source": "post.images_meta.ocr_confidence",
+      "missing_policy": "negative_one_if_missing",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "ocr_text_length",
+      "group": "IMAGE",
+      "dtype": "int",
+      "description": "Character length of extracted OCR text",
+      "source": "post.images_meta.ocr_text",
+      "missing_policy": "zero_if_missing",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "image_reuse_count",
+      "group": "IMAGE",
+      "dtype": "int",
+      "description": "Count of previous cluster reuse matches for image hash",
+      "source": "post.images_meta",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "phash_match_count",
+      "group": "IMAGE",
+      "dtype": "int",
+      "description": "Count of perceptual hash matches across image registry",
+      "source": "post.images_meta.phash",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "ocr_unreliable",
+      "group": "IMAGE",
+      "dtype": "bool",
+      "description": "Flag indicating OCR text available but confidence is below 0.50",
+      "source": "ocr_confidence < 0.5 and ocr_available",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "source_count",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "int",
+      "description": "Count of cited evidence sources",
+      "source": "evidence.source_type",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "unique_source_count",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "int",
+      "description": "Count of unique source IDs cited in evidence",
+      "source": "evidence.provenance.source_id",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "official_source_present",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "bool",
+      "description": "Flag indicating citation of official regulatory source",
+      "source": "evidence.source_type == REGULATORY_ALERT",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "domain_count",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "int",
+      "description": "Count of distinct domains referenced in post or evidence URLs",
+      "source": "urls",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "unique_domain_count",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "int",
+      "description": "Count of unique internet domains",
+      "source": "urls",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "official_domain_match",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "bool",
+      "description": "Flag indicating evidence URL matches official government/regulatory domain",
+      "source": "evidence.source_url",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "domain_age_days",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "float",
+      "description": "Domain registration age in days or -1.0 if unqueried/missing",
+      "source": "domain intelligence",
+      "missing_policy": "negative_one_if_missing",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "domain_age_available",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "bool",
+      "description": "Flag indicating if domain age is legitimately available",
+      "source": "domain intelligence",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "shortened_url_count",
+      "group": "SOURCE_DOMAIN",
+      "dtype": "int",
+      "description": "Count of shortened URLs (bit.ly, tinyurl, t.me) in post text",
+      "source": "post.content.text",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_node_count",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Total nodes in post's heterogeneous evidence graph",
+      "source": "graph_dataset.nodes",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_edge_count",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Total edges in post's heterogeneous evidence graph",
+      "source": "graph_dataset.edges",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_claim_nodes",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of CLAIM nodes in heterogeneous graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_evidence_nodes",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of EVIDENCE nodes in heterogeneous graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_url_nodes",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of URL nodes in heterogeneous graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_account_nodes",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of ACCOUNT nodes in heterogeneous graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_support_edges",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of SUPPORTS directed edges in graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_contradict_edges",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of CONTRADICTS directed edges in graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_neutral_edges",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of NEUTRAL_TO directed edges in graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_insufficient_edges",
+      "group": "GRAPH",
+      "dtype": "int",
+      "description": "Count of INSUFFICIENT_FOR directed edges in graph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "graph_degree_mean",
+      "group": "GRAPH",
+      "dtype": "float",
+      "description": "Mean degree across heterogeneous nodes in subgraph",
+      "source": "graph_dataset",
+      "missing_policy": "zero_if_no_graph",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "guarantee_claim_present",
+      "group": "SCAM_SIGNAL",
+      "dtype": "bool",
+      "description": "Observable claim asserting guaranteed profit or zero risk",
+      "source": "semantic analysis",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "urgency_signal_present",
+      "group": "SCAM_SIGNAL",
+      "dtype": "bool",
+      "description": "Observable semantic urgency cue (e.g., today only, hurry, limited slots)",
+      "source": "semantic analysis",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "upfront_payment_present",
+      "group": "SCAM_SIGNAL",
+      "dtype": "bool",
+      "description": "Observable advance fee, registration deposit, or processing fee request",
+      "source": "semantic analysis",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "financial_claim_count",
+      "group": "SCAM_SIGNAL",
+      "dtype": "int",
+      "description": "Count of claims specifically making financial assertions",
+      "source": "claims.claim_type == FINANCIAL",
+      "missing_policy": "zero_if_none",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "currency_present",
+      "group": "SCAM_SIGNAL",
+      "dtype": "bool",
+      "description": "Flag indicating presence of monetary amount or currency denomination",
+      "source": "semantic analysis",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    },
+    {
+      "name": "temporal_deadline_present",
+      "group": "SCAM_SIGNAL",
+      "dtype": "bool",
+      "description": "Flag indicating presence of time-bound deadlines or promised turnarounds",
+      "source": "semantic analysis",
+      "missing_policy": "false_default",
+      "leakage_risk": "none"
+    }
+  ]
+}

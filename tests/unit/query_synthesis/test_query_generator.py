@@ -9,7 +9,8 @@ def synthesizer():
 def make_atomic_claim(text: str, subj: str=None, pred: str=None, obj: str=None, val: str=None, unit: str=None, ctype: str="FACTUAL", verifiable: bool=True, language="en") -> AtomicClaim:
     return AtomicClaim(
         parent_claim_id="p1",
-        text=text,
+        original_text=text,
+        normalized_text=text,
         subject=subj,
         predicate=pred,
         object=obj,

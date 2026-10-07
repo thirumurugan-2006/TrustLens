@@ -1,0 +1,44 @@
+{
+  "dataset_id": "trustlens_retrieval_v0.1.0",
+  "dataset_version": "v0.1.0",
+  "source_dataset_version": "v0.2.0",
+  "schema_version": "1.0.0",
+  "guideline_version": "1.0.0",
+  "created_at": "2026-10-07T08:24:43.273637+00:00",
+  "record_count": 1200,
+  "pair_count": 4800,
+  "query_count": 1200,
+  "claim_count": 1200,
+  "positive_count": 1200,
+  "negative_count": 3600,
+  "negative_type_distribution": {
+    "HARD_TOPIC_NEGATIVE": 3600
+  },
+  "positive_relation_distribution": {
+    "CONTRADICTS": 1020,
+    "SUPPORTS": 180
+  },
+  "query_type_distribution": {
+    "FINANCIAL": 240,
+    "VERIFICATION": 960
+  },
+  "language_distribution": {
+    "en": 320,
+    "ta": 260,
+    "hi": 300,
+    "ta-en": 180,
+    "hi-en": 140
+  },
+  "cross_language_count": 800,
+  "train_count": 846,
+  "validation_count": 180,
+  "test_count": 174,
+  "source_distribution": {
+    "PUBLIC_DATASET": 1020,
+    "LOCAL_DATA": 180
+  },
+  "cluster_count": 340,
+  "duplicate_count": 0,
+  "invalid_count": 0,
+  "human_reviewed_count": 300
+}

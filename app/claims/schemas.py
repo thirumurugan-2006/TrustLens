@@ -24,21 +24,26 @@ class Claim(BaseModel):
 class AtomicClaim(BaseModel):
     atomic_claim_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     parent_claim_id: str
-    text: str
+    original_text: str
+    normalized_text: str
+    claim_type: str = "UNKNOWN"
     subject: Optional[str] = None
     predicate: Optional[str] = None
     object: Optional[str] = None
     value: Optional[str] = None
     unit: Optional[str] = None
     currency: Optional[str] = None
-    language: str = "unknown"
-    claim_type: str = "UNKNOWN"
+    temporal_context: Optional[Dict[str, Any]] = None
     polarity: str = "POSITIVE"
     negated: bool = False
-    temporal_context: Optional[Dict[str, Any]] = None
     entities: List[str] = Field(default_factory=list)
     conditions: Optional[Dict[str, Any]] = None
+    relationships: List[Dict[str, Any]] = Field(default_factory=list)
     attribution: Optional[Dict[str, Any]] = None
+    modality: Optional[str] = None
+    certainty: Optional[str] = None
+    language: str = "unknown"
+    script: str = "unknown"
     source_span: Optional[SourceSpan] = None
     verifiable: bool = False
     decomposition_confidence: float = 1.0

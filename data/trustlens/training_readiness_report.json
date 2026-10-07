@@ -1,0 +1,446 @@
+{
+  "audit_version": "1.0.0",
+  "dataset_version": "v0.2.0",
+  "audit_timestamp": "2026-10-07T15:35:55.294061+00:00",
+  "overall_status": "TRAINING_READY",
+  "training_ready": true,
+  "record_counts": {
+    "total_posts": 1560,
+    "train": 1092,
+    "validation": 234,
+    "test": 234,
+    "claims": 1560,
+    "evidence": 1560,
+    "risks": 1560
+  },
+  "integrity_checks": {
+    "cross_split_leakage_violations": 0,
+    "synthetic_in_test_violations": 0,
+    "missing_provenance_count": 0,
+    "unapproved_sources_count": 0
+  },
+  "distributions": {
+    "risk": {
+      "LOW": 180,
+      "MEDIUM": 240,
+      "HIGH": 990,
+      "INSUFFICIENT": 150
+    },
+    "languages": {
+      "en": 400,
+      "ta": 300,
+      "hi": 340,
+      "ta-en": 220,
+      "hi-en": 300
+    },
+    "domains": {
+      "FINANCIAL": 180,
+      "JOB": 180,
+      "SHOPPING": 174,
+      "GIVEAWAY": 150,
+      "PAYMENT": 174,
+      "CREDENTIAL": 150,
+      "IMPERSONATION": 150,
+      "OTHER": 162,
+      "LEGITIMATE": 120,
+      "INSUFFICIENT": 120
+    },
+    "claim_detection": {
+      "CLAIM": 1350,
+      "NON_CLAIM": 180,
+      "UNCERTAIN": 30
+    },
+    "claim_types": {
+      "FINANCIAL": 240,
+      "JOB": 120,
+      "SHOPPING": 120,
+      "GIVEAWAY": 120,
+      "PAYMENT": 120,
+      "CREDENTIAL": 120,
+      "IMPERSONATION": 120,
+      "OTHER": 600
+    },
+    "evidence_relations": {
+      "CONTRADICTS": 1020,
+      "SUPPORTS": 180,
+      "INSUFFICIENT": 180,
+      "NEUTRAL": 180
+    }
+  },
+  "matrices": {
+    "language_x_risk": {
+      "en": {
+        "LOW": 60,
+        "MEDIUM": 80,
+        "HIGH": 250,
+        "INSUFFICIENT": 10
+      },
+      "ta": {
+        "LOW": 10,
+        "MEDIUM": 40,
+        "HIGH": 245,
+        "INSUFFICIENT": 5
+      },
+      "hi": {
+        "LOW": 50,
+        "MEDIUM": 40,
+        "HIGH": 245,
+        "INSUFFICIENT": 5
+      },
+      "ta-en": {
+        "LOW": 50,
+        "MEDIUM": 40,
+        "HIGH": 125,
+        "INSUFFICIENT": 5
+      },
+      "hi-en": {
+        "LOW": 10,
+        "MEDIUM": 40,
+        "HIGH": 125,
+        "INSUFFICIENT": 125
+      }
+    },
+    "domain_x_risk": {
+      "FINANCIAL": {
+        "LOW": 12,
+        "MEDIUM": 36,
+        "HIGH": 126,
+        "INSUFFICIENT": 6
+      },
+      "JOB": {
+        "LOW": 12,
+        "MEDIUM": 36,
+        "HIGH": 126,
+        "INSUFFICIENT": 6
+      },
+      "SHOPPING": {
+        "LOW": 6,
+        "MEDIUM": 36,
+        "HIGH": 126,
+        "INSUFFICIENT": 6
+      },
+      "GIVEAWAY": {
+        "LOW": 6,
+        "MEDIUM": 24,
+        "HIGH": 120,
+        "INSUFFICIENT": 0
+      },
+      "PAYMENT": {
+        "LOW": 6,
+        "MEDIUM": 36,
+        "HIGH": 126,
+        "INSUFFICIENT": 6
+      },
+      "CREDENTIAL": {
+        "LOW": 6,
+        "MEDIUM": 24,
+        "HIGH": 120,
+        "INSUFFICIENT": 0
+      },
+      "IMPERSONATION": {
+        "LOW": 6,
+        "MEDIUM": 24,
+        "HIGH": 120,
+        "INSUFFICIENT": 0
+      },
+      "OTHER": {
+        "LOW": 6,
+        "MEDIUM": 24,
+        "HIGH": 126,
+        "INSUFFICIENT": 6
+      },
+      "LEGITIMATE": {
+        "LOW": 120,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "INSUFFICIENT": 0
+      },
+      "INSUFFICIENT": {
+        "LOW": 0,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "INSUFFICIENT": 120
+      }
+    },
+    "split_x_risk": {
+      "train": {
+        "LOW": 132,
+        "MEDIUM": 168,
+        "HIGH": 690,
+        "INSUFFICIENT": 102
+      },
+      "validation": {
+        "LOW": 24,
+        "MEDIUM": 36,
+        "HIGH": 150,
+        "INSUFFICIENT": 24
+      },
+      "test": {
+        "LOW": 24,
+        "MEDIUM": 36,
+        "HIGH": 150,
+        "INSUFFICIENT": 24
+      }
+    },
+    "split_x_language": {
+      "train": {
+        "en": 280,
+        "ta": 210,
+        "hi": 238,
+        "ta-en": 154,
+        "hi-en": 210
+      },
+      "validation": {
+        "en": 60,
+        "ta": 45,
+        "hi": 51,
+        "ta-en": 33,
+        "hi-en": 45
+      },
+      "test": {
+        "en": 60,
+        "ta": 45,
+        "hi": 51,
+        "ta-en": 33,
+        "hi-en": 45
+      }
+    }
+  },
+  "annotation_audit": {
+    "double_annotated_count": 262,
+    "adjudicated_count": 262
+  },
+  "leakage": {
+    "cross_split_leakage": 0,
+    "target_leakage": 0,
+    "status": "PASS"
+  },
+  "provenance": {
+    "missing_provenance_count": 0,
+    "unapproved_sources_count": 0,
+    "status": "PASS"
+  },
+  "evaluation": {
+    "classification_metrics": "IMPLEMENTED",
+    "retrieval_metrics": "IMPLEMENTED",
+    "ocr_metrics": "IMPLEMENTED",
+    "calibration_metrics": "IMPLEMENTED",
+    "abstention_metrics": "IMPLEMENTED",
+    "evidence_metrics": "IMPLEMENTED",
+    "status": "READY"
+  },
+  "tasks": {
+    "claim_detection": {
+      "task_id": "T-1",
+      "name": "Claim Detection",
+      "model": "XLM-R / MuRIL (Binary Classification)",
+      "status": "READY",
+      "sample_count": 1560,
+      "classes": {
+        "CLAIM": 1350,
+        "NON_CLAIM": 180,
+        "UNCERTAIN": 30
+      },
+      "notes": "Sufficient balanced dataset (CLAIM vs NON_CLAIM) across all 5 target languages."
+    },
+    "claim_extraction": {
+      "task_id": "T-2",
+      "name": "Claim Extraction",
+      "model": "XLM-R / MuRIL (Token Boundary Spans)",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1560,
+      "classes": {
+        "FINANCIAL": 240,
+        "JOB": 120,
+        "SHOPPING": 120,
+        "GIVEAWAY": 120,
+        "PAYMENT": 120,
+        "CREDENTIAL": 120,
+        "IMPERSONATION": 120,
+        "OTHER": 600
+      },
+      "notes": "All claims possess source_spans; token-level BIO mapping required during preprocessing."
+    },
+    "atomic_claim_decomposition": {
+      "task_id": "T-3",
+      "name": "Atomic Decomposition",
+      "model": "Seq2Seq / Slot-Filling Head",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1560,
+      "notes": "Rule-based atomic frames verified by annotators. Suitable for slot modeling; generative evaluation pending."
+    },
+    "query_synthesis": {
+      "task_id": "T-4",
+      "name": "Query Synthesis",
+      "model": "Search Query Formulator / Reformulation Head",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1200,
+      "notes": "1,200 search queries linked and validated in Phase 6B; generative query expansion evaluation pending."
+    },
+    "retrieval_ranking": {
+      "task_id": "T-5",
+      "name": "Evidence Retrieval & Ranking",
+      "model": "Cross-Encoder (BGE-Reranker / MiniLM)",
+      "status": "READY",
+      "sample_count": 1200,
+      "prerequisite": "(query, positive_evidence, negative_evidence) triplets",
+      "notes": "Hard-negative pair dataset (1,200 pos, 3,600 neg, 800 cross-lang) verified in data/processed/retrieval/.",
+      "blocker_reason": ""
+    },
+    "evidence_verification": {
+      "task_id": "T-6",
+      "name": "Evidence NLI Verification",
+      "model": "Multilingual NLI Verifier",
+      "status": "READY",
+      "sample_count": 1560,
+      "classes": {
+        "CONTRADICTS": 1020,
+        "SUPPORTS": 180,
+        "INSUFFICIENT": 180,
+        "NEUTRAL": 180
+      },
+      "notes": "All 4 evidence classes represented (180 SUPPORTS, 1020 CONTRADICTS, 180 NEUTRAL, 180 INSUFFICIENT)."
+    },
+    "gat_relational_graph": {
+      "task_id": "T-7",
+      "name": "Heterogeneous Evidence Graph / GAT",
+      "model": "Graph Attention Network",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1560,
+      "prerequisite": "Heterogeneous graph dataset (typed node/edge tensors)",
+      "notes": "Heterogeneous graph dataset (1,560 graphs, 7,800 nodes, 6,240 edges) verified; PyG installation and final GAT task target definition pending.",
+      "blocker_reason": ""
+    },
+    "lightgbm_risk_classifier": {
+      "task_id": "T-8",
+      "name": "Final Risk Prediction",
+      "model": "Gradient Boosted Decision Trees (LightGBM)",
+      "status": "READY",
+      "sample_count": 1560,
+      "prerequisite": "Tabular feature matrix + 4-class risk ground truth",
+      "notes": "Structured 92-feature tabular dataset (1,092 train, 234 val, 234 test) verified in data/processed/features/.",
+      "blocker_reason": ""
+    },
+    "confidence_calibration": {
+      "task_id": "T-9",
+      "name": "Calibration",
+      "model": "Temperature Scaling / Isotonic Regression",
+      "status": "CALIBRATION_NOT_YET_AVAILABLE",
+      "notes": "Prerequisite model predictions do not exist. Evaluation functions (ECE, Brier) prepared."
+    },
+    "selective_prediction_abstention": {
+      "task_id": "T-10",
+      "name": "Abstention",
+      "model": "Risk-Coverage Abstention Gate",
+      "status": "READY_FOR_MODEL_PHASE",
+      "notes": "INSUFFICIENT labels and selective accuracy evaluation functions prepared."
+    },
+    "T1": {
+      "task_id": "T-1",
+      "name": "Claim Detection",
+      "model": "XLM-R / MuRIL (Binary Classification)",
+      "status": "READY",
+      "sample_count": 1560,
+      "classes": {
+        "CLAIM": 1350,
+        "NON_CLAIM": 180,
+        "UNCERTAIN": 30
+      },
+      "notes": "Sufficient balanced dataset (CLAIM vs NON_CLAIM) across all 5 target languages."
+    },
+    "T2": {
+      "task_id": "T-2",
+      "name": "Claim Extraction",
+      "model": "XLM-R / MuRIL (Token Boundary Spans)",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1560,
+      "classes": {
+        "FINANCIAL": 240,
+        "JOB": 120,
+        "SHOPPING": 120,
+        "GIVEAWAY": 120,
+        "PAYMENT": 120,
+        "CREDENTIAL": 120,
+        "IMPERSONATION": 120,
+        "OTHER": 600
+      },
+      "notes": "All claims possess source_spans; token-level BIO mapping required during preprocessing."
+    },
+    "T3": {
+      "task_id": "T-3",
+      "name": "Atomic Decomposition",
+      "model": "Seq2Seq / Slot-Filling Head",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1560,
+      "notes": "Rule-based atomic frames verified by annotators. Suitable for slot modeling; generative evaluation pending."
+    },
+    "T4": {
+      "task_id": "T-4",
+      "name": "Query Synthesis",
+      "model": "Search Query Formulator / Reformulation Head",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1200,
+      "notes": "1,200 search queries linked and validated in Phase 6B; generative query expansion evaluation pending."
+    },
+    "T5": {
+      "task_id": "T-5",
+      "name": "Evidence Retrieval & Ranking",
+      "model": "Cross-Encoder (BGE-Reranker / MiniLM)",
+      "status": "READY",
+      "sample_count": 1200,
+      "prerequisite": "(query, positive_evidence, negative_evidence) triplets",
+      "notes": "Hard-negative pair dataset (1,200 pos, 3,600 neg, 800 cross-lang) verified in data/processed/retrieval/.",
+      "blocker_reason": ""
+    },
+    "T6": {
+      "task_id": "T-6",
+      "name": "Evidence NLI Verification",
+      "model": "Multilingual NLI Verifier",
+      "status": "READY",
+      "sample_count": 1560,
+      "classes": {
+        "CONTRADICTS": 1020,
+        "SUPPORTS": 180,
+        "INSUFFICIENT": 180,
+        "NEUTRAL": 180
+      },
+      "notes": "All 4 evidence classes represented (180 SUPPORTS, 1020 CONTRADICTS, 180 NEUTRAL, 180 INSUFFICIENT)."
+    },
+    "T7": {
+      "task_id": "T-7",
+      "name": "Heterogeneous Evidence Graph / GAT",
+      "model": "Graph Attention Network",
+      "status": "READY_WITH_LIMITATIONS",
+      "sample_count": 1560,
+      "prerequisite": "Heterogeneous graph dataset (typed node/edge tensors)",
+      "notes": "Heterogeneous graph dataset (1,560 graphs, 7,800 nodes, 6,240 edges) verified; PyG installation and final GAT task target definition pending.",
+      "blocker_reason": ""
+    },
+    "T8": {
+      "task_id": "T-8",
+      "name": "Final Risk Prediction",
+      "model": "Gradient Boosted Decision Trees (LightGBM)",
+      "status": "READY",
+      "sample_count": 1560,
+      "prerequisite": "Tabular feature matrix + 4-class risk ground truth",
+      "notes": "Structured 92-feature tabular dataset (1,092 train, 234 val, 234 test) verified in data/processed/features/.",
+      "blocker_reason": ""
+    },
+    "T9": {
+      "task_id": "T-9",
+      "name": "Calibration",
+      "model": "Temperature Scaling / Isotonic Regression",
+      "status": "CALIBRATION_NOT_YET_AVAILABLE",
+      "notes": "Prerequisite model predictions do not exist. Evaluation functions (ECE, Brier) prepared."
+    },
+    "T10": {
+      "task_id": "T-10",
+      "name": "Abstention",
+      "model": "Risk-Coverage Abstention Gate",
+      "status": "READY_FOR_MODEL_PHASE",
+      "notes": "INSUFFICIENT labels and selective accuracy evaluation functions prepared."
+    }
+  },
+  "blockers": [],
+  "warnings": []
+}

@@ -97,9 +97,9 @@ class RuleBasedClaimExtractor:
         return "FACTUAL", True
 
     def extract_from_post(self, post: NormalizedPost) -> List[Claim]:
-        if not post or not post.text or not post.text.strip():
+        if not post or not post.content.text or not post.content.text.strip():
             return []
-        sentences = self._segment_sentences(post.text)
+        sentences = self._segment_sentences(post.content.text)
         claims = []
         seen_normalized = set()
         start_idx = 0
@@ -108,7 +108,7 @@ class RuleBasedClaimExtractor:
             if norm_text.lower() in seen_normalized:
                 continue
             seen_normalized.add(norm_text.lower())
-            sent_start = post.text.find(sent, start_idx)
+            sent_start = post.content.text.find(sent, start_idx)
             if sent_start != -1:
                 sent_end = sent_start + len(sent)
                 start_idx = sent_end

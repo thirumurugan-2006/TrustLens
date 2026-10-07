@@ -1,0 +1,115 @@
+{
+    "post_id": "screenshot_d35ce6349095",
+    "platform": "screenshot",
+    "post_type": "image_text",
+    "source_url": null,
+    "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+    },
+    "content": {
+        "title": null,
+        "text": "இந்த job மிகவும் நல்லது",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+    },
+    "media": {
+        "images": [
+            "data/raw/screenshots/screenshot_d35ce6349095.png"
+        ],
+        "videos": [],
+        "audio": []
+    },
+    "comments": [],
+    "replies": [],
+    "quoted_content": null,
+    "reposted_content": null,
+    "timestamp": "2026-10-07T08:12:29.110447+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "not_installed",
+        "ocr_status": "SUCCESS",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "இந்த job மிகவும் நல்லது",
+        "ocr_normalized_text": "இந்த job மிகவும் நல்லது",
+        "ocr_confidence": 0.84,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "ocr_unreliable": false,
+        "ocr_attempts": 1,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_selected_preprocessing": "original",
+        "ocr_selection_score": 0.5156,
+        "ocr_detection_count": 1,
+        "ocr_text_length": 23,
+        "ocr_script_distribution": {
+            "Tamil": 0.7857,
+            "Latin": 0.2143,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.84,
+                "detection_count": 1,
+                "text_length": 23,
+                "tamil_ratio": 0.7857,
+                "latin_ratio": 0.2143,
+                "selection_score": 0.5156,
+                "usable": true
+            }
+        ],
+        "quality_score": 0.84,
+        "quality_level": "medium",
+        "language_analysis": {
+            "primary_language": "ta",
+            "language_confidence": 0.99,
+            "secondary_languages": [
+                "en"
+            ],
+            "scripts": [
+                "Latin",
+                "Tamil"
+            ],
+            "script_distribution": {
+                "Latin": 0.2143,
+                "Tamil": 0.7857,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": true,
+            "code_mix_confidence": 0.9,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "ensemble",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 300,
+        "image_height": 300,
+        "image_size_bytes": 909,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    },
+    "acquisition": "screenshot",
+    "text": "இந்த job மிகவும் நல்லது",
+    "title": null,
+    "images": [
+        "data/raw/screenshots/screenshot_d35ce6349095.png"
+    ]
+}

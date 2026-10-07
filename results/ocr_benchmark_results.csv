@@ -1,0 +1,1 @@
+image_id,model_name,predicted_text,ground_truth,confidence,processing_time_ms,category,language,status,error,cer,wer,exact_match,annotation_status,confidence_bucket

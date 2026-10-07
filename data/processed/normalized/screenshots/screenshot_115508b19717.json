@@ -1,0 +1,88 @@
+{
+    "post_id": "screenshot_115508b19717",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "usable text",
+    "images": [
+        "data/raw/screenshots/screenshot_115508b19717.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T15:57:36.908771+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "1.7.2",
+        "ocr_status": "SUCCESS",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "usable text",
+        "ocr_normalized_text": "usable text",
+        "ocr_confidence": 0.73,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "ocr_unreliable": false,
+        "ocr_attempts": 1,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_selected_preprocessing": "original",
+        "ocr_selection_score": 0.6265,
+        "ocr_detection_count": 1,
+        "ocr_text_length": 11,
+        "ocr_script_distribution": {
+            "Tamil": 0.0,
+            "Latin": 1.0,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.73,
+                "detection_count": 1,
+                "text_length": 11,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.6265,
+                "usable": true
+            }
+        ],
+        "quality_score": 0.73,
+        "quality_level": "medium",
+        "language_analysis": {
+            "primary_language": "ca",
+            "language_confidence": 1.0,
+            "secondary_languages": [],
+            "scripts": [
+                "Latin"
+            ],
+            "script_distribution": {
+                "Latin": 1.0,
+                "Tamil": 0.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 300,
+        "image_height": 300,
+        "image_size_bytes": 911,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    }
+}

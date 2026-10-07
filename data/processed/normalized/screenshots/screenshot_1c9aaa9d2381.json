@@ -1,0 +1,201 @@
+{
+    "post_id": "screenshot_1c9aaa9d2381",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "தமிழ் முதலீடு",
+    "images": [
+        "data/raw/screenshots/screenshot_1c9aaa9d2381.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-06T03:33:47.031934+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "not_installed",
+        "ocr_status": "SUCCESS",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "தமிழ் முதலீடு",
+        "ocr_normalized_text": "தமிழ் முதலீடு",
+        "ocr_confidence": 0.72,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "ocr_unreliable": false,
+        "ocr_attempts": 8,
+        "ocr_selected_language_mode": [
+            "ta"
+        ],
+        "ocr_selected_preprocessing": "original",
+        "ocr_selection_score": 0.628,
+        "ocr_detection_count": 1,
+        "ocr_text_length": 13,
+        "ocr_script_distribution": {
+            "Tamil": 1.0,
+            "Latin": 0.0,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.265,
+                "detection_count": 1,
+                "text_length": 16,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.4323,
+                "usable": false,
+                "warnings": [
+                    "confidence_below_gate:0.265"
+                ],
+                "backend": "unknown"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.72,
+                "detection_count": 1,
+                "text_length": 13,
+                "tamil_ratio": 1.0,
+                "latin_ratio": 0.0,
+                "selection_score": 0.628,
+                "usable": true,
+                "warnings": [],
+                "backend": "unknown"
+            },
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "upscale_2x",
+                "confidence": 0.265,
+                "detection_count": 1,
+                "text_length": 16,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.4323,
+                "usable": false,
+                "warnings": [
+                    "confidence_below_gate:0.265"
+                ],
+                "backend": "unknown"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "upscale_2x",
+                "confidence": 0.72,
+                "detection_count": 1,
+                "text_length": 13,
+                "tamil_ratio": 1.0,
+                "latin_ratio": 0.0,
+                "selection_score": 0.628,
+                "usable": true,
+                "warnings": [],
+                "backend": "unknown"
+            },
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "grayscale_upscale_2x",
+                "confidence": 0.265,
+                "detection_count": 1,
+                "text_length": 16,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.4323,
+                "usable": false,
+                "warnings": [
+                    "confidence_below_gate:0.265"
+                ],
+                "backend": "unknown"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "grayscale_upscale_2x",
+                "confidence": 0.72,
+                "detection_count": 1,
+                "text_length": 13,
+                "tamil_ratio": 1.0,
+                "latin_ratio": 0.0,
+                "selection_score": 0.628,
+                "usable": true,
+                "warnings": [],
+                "backend": "unknown"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "contrast_enhanced",
+                "confidence": 0.72,
+                "detection_count": 1,
+                "text_length": 13,
+                "tamil_ratio": 1.0,
+                "latin_ratio": 0.0,
+                "selection_score": 0.628,
+                "usable": true,
+                "warnings": [],
+                "backend": "unknown"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "adaptive_threshold",
+                "confidence": 0.72,
+                "detection_count": 1,
+                "text_length": 13,
+                "tamil_ratio": 1.0,
+                "latin_ratio": 0.0,
+                "selection_score": 0.628,
+                "usable": true,
+                "warnings": [],
+                "backend": "unknown"
+            }
+        ],
+        "quality_score": 0.72,
+        "quality_level": "medium",
+        "language_analysis": {
+            "primary_language": "ta",
+            "language_confidence": 0.99,
+            "secondary_languages": [],
+            "scripts": [
+                "Tamil"
+            ],
+            "script_distribution": {
+                "Latin": 0.0,
+                "Tamil": 1.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "ensemble",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 300,
+        "image_height": 300,
+        "image_size_bytes": 909,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    }
+}

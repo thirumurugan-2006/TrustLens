@@ -22,14 +22,18 @@ class TextLoader:
                 "Text input cannot be empty"
             )
 
+        from app.input.schemas import Platform, PostType, PostContent, AcquisitionMethod
+
         return NormalizedPost(
             post_id="text_input",
-            platform="text",
-            text=normalized_text,
+            platform=Platform.text,
+            post_type=PostType.text,
+            content=PostContent(text=normalized_text),
             timestamp=datetime.now(
                 timezone.utc
             ).isoformat(),
             metadata={
                 "source_type": "direct_text"
-            }
+            },
+            acquisition=AcquisitionMethod.copied_text
         )

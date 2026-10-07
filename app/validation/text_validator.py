@@ -1,4 +1,4 @@
-﻿from app.validation.schemas import ValidationResult
+from app.validation.schemas import ValidationResult
 
 MIN_TEXT_LENGTH = 10
 
@@ -22,6 +22,6 @@ def validate_text(text: str | None) -> ValidationResult:
     return ValidationResult(
         valid=True,
         warnings=warnings,
-        quality_score=1.0 if not warnings else 0.75,
+        quality_score=1.0 if not warnings else 0.5,
         quality_level="high" if not warnings else "medium",
     )

@@ -1,0 +1,104 @@
+{
+    "post_id": "screenshot_3ff130c649b2",
+    "platform": "screenshot",
+    "post_type": "image_text",
+    "source_url": null,
+    "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+    },
+    "content": {
+        "title": null,
+        "text": "",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+    },
+    "media": {
+        "images": [
+            "data/raw/screenshots/screenshot_3ff130c649b2.png"
+        ],
+        "videos": [],
+        "audio": []
+    },
+    "comments": [],
+    "replies": [],
+    "quoted_content": null,
+    "reposted_content": null,
+    "timestamp": "2026-10-07T05:49:36.619294+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "not_installed",
+        "ocr_status": "OCR_FAILED",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "",
+        "ocr_normalized_text": "",
+        "ocr_confidence": 0.0,
+        "ocr_quality": "failed",
+        "ocr_warning": true,
+        "ocr_unreliable": true,
+        "ocr_attempts": 1,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_selected_preprocessing": "original",
+        "ocr_selection_score": 0.0,
+        "ocr_detection_count": 0,
+        "ocr_text_length": 0,
+        "ocr_script_distribution": {
+            "Tamil": 0.0,
+            "Latin": 0.0,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.0,
+                "detection_count": 0,
+                "text_length": 0,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 0.0,
+                "selection_score": 0.0,
+                "usable": false
+            }
+        ],
+        "quality_score": 0.0,
+        "quality_level": "failed",
+        "language_analysis": {
+            "primary_language": "unknown",
+            "language_confidence": 0.0,
+            "secondary_languages": [],
+            "scripts": [],
+            "script_distribution": {},
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": false
+        },
+        "image_format": "PNG",
+        "image_width": 300,
+        "image_height": 300,
+        "image_size_bytes": 909,
+        "ocr_warnings": [
+            "OCR did not extract usable text."
+        ]
+    },
+    "acquisition": "screenshot",
+    "text": "",
+    "title": null,
+    "images": [
+        "data/raw/screenshots/screenshot_3ff130c649b2.png"
+    ]
+}

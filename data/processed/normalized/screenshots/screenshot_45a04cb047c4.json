@@ -1,0 +1,72 @@
+{
+    "post_id": "screenshot_45a04cb047c4",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "20g61 (Bou BDVomd 61316 (B6fC G&uuaumi? 2ris6ir [g 89668606 @@LW #ifunor W566 8 BLLu 21586it Apig &8ng51 Uelijoy (Asset Allocation) 616u6ug164 Bitquid 'G Gauw Gou6oorGw? #eolli 1u6+8,6u6u LJGoorG 660pisg1 5 @JaorGss6it 60% 40% 40% (WB660 O8ugl 606u891068 GouoorCu 00g& 81605 / 60% 6L6ur Ubgmg6ir Feolliq GLiL GLu_ 0ue;6qlo LJ6ooC (Equity) (Debt) (66006b51 foorL &1rou 6u6m_8a6808 fgoguwunsot 610l0n6orB516818 3 236uCs6i (B660 Gletgl 6061631068 GoucoorCu OoorLDD Gou6ooriqW 6 @B8u L18oi @uGu1G5 @g6f G1 2 SIP e@gudd (sa80 3 e1661 06ootb65 qsiLmmia6i Q8u4me6 Gq6Gu 6068 GolGooTLmbb @6u66u0g WiB(D 088,616u LGoorlq 6u 660igg1 6006s51 SIP (Systematic 3 2600r8861ougi Ed5. 500 Investment Plan) 911q6610 460165605 G816gi (g668 OB1Li#8ung Oqu6fGw 6068116u O8iumg6. (b68 Obuumsgt_ (mi86i . BMULGw WsaSCw 5 e6u81 0g (Emergrency 6 00b5101 6nuiC sefleg6fums 6638ums6if Corpus) 2(onb65m86 G8sgibosmgnobm86i B1ULS€ Ld@iu 56006551 Gbiumiig [6g16 @b66 Go1 Gu 3 - 6 L0ig 01800466 0186u6486061t 811gn1658 BLLLrs (bundled 568 [00Bg108 Gumgilrgor 2161104 product) 011m6qj65 4Q181 dg B6ofluuns 8801681 B1uLSC (Health gofisGm86n. Insurance) @8uu. s0ulc Wss8 606u681um861. moneycontrol @B6Sc (56u @quu",
+    "images": [
+        "data/raw/screenshots/screenshot_45a04cb047c4.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T06:57:50.977112+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_confidence": 0.265291911372604,
+        "ocr_quality": "low",
+        "ocr_warning": true,
+        "ocr_unreliable": true,
+        "ocr_attempts": 2,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_detection_count": 83,
+        "ocr_text_length": 1179,
+        "ocr_script_distribution": {
+            "Latin": 1.0,
+            "Tamil": 0.0,
+            "Devanagari": 0.0,
+            "Arabic": 0.0,
+            "Unknown": 0.0
+        },
+        "ocr_selection_score": 0.6326,
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "confidence": 0.265291911372604,
+                "usable": false,
+                "selection_score": 0.6326
+            }
+        ],
+        "quality_score": 0.265291911372604,
+        "quality_level": "low",
+        "language_analysis": {
+            "primary_language": "unknown",
+            "language_confidence": 0.0,
+            "secondary_languages": [],
+            "scripts": [],
+            "script_distribution": {},
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": false
+        },
+        "image_format": "PNG",
+        "image_width": 1160,
+        "image_height": 1355,
+        "image_size_bytes": 1882947,
+        "ocr_warnings": [
+            "OCR confidence is low."
+        ]
+    }
+}

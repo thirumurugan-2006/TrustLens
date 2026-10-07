@@ -356,17 +356,18 @@ class ScreenshotParser:
             metadata["ocr_warnings"] = ocr_quality.warnings
 
         # ── Build NormalizedPost ─────────────────────────────────────────
+        from app.input.schemas import Platform, PostType, PostContent, PostMedia, AcquisitionMethod
+
         post = NormalizedPost(
             post_id=post_id,
-            platform="screenshot",
+            platform=Platform.screenshot,
+            post_type=PostType.image_text,
             source_url=None,
-            author=None,
-            title=None,
-            text=normalized_text,
-            images=[str(saved_path).replace("\\", "/")],
-            comments=[],
+            content=PostContent(text=normalized_text),
+            media=PostMedia(images=[str(saved_path).replace("\\", "/")]),
             timestamp=datetime.now(timezone.utc).isoformat(),
             metadata=metadata,
+            acquisition=AcquisitionMethod.screenshot
         )
 
         # ── Persist JSON ─────────────────────────────────────────────────

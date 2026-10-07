@@ -1,0 +1,394 @@
+{
+  "$defs": {
+    "AnnotationConfidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ],
+      "title": "AnnotationConfidence",
+      "type": "string"
+    },
+    "AnnotationMetadata": {
+      "properties": {
+        "annotation_id": {
+          "title": "Annotation Id",
+          "type": "string"
+        },
+        "annotator_id": {
+          "title": "Annotator Id",
+          "type": "string"
+        },
+        "annotation_timestamp": {
+          "title": "Annotation Timestamp",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "guideline_version": {
+          "default": "1.0.0",
+          "title": "Guideline Version",
+          "type": "string"
+        },
+        "review_status": {
+          "$ref": "#/$defs/ReviewStatus",
+          "default": "APPROVED"
+        },
+        "confidence": {
+          "$ref": "#/$defs/AnnotationConfidence",
+          "default": "HIGH"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "annotator_id"
+      ],
+      "title": "AnnotationMetadata",
+      "type": "object"
+    },
+    "ClaimDetectionLabel": {
+      "enum": [
+        "CLAIM",
+        "NON_CLAIM",
+        "UNCERTAIN"
+      ],
+      "title": "ClaimDetectionLabel",
+      "type": "string"
+    },
+    "ClaimType": {
+      "enum": [
+        "FINANCIAL",
+        "JOB",
+        "SHOPPING",
+        "GIVEAWAY",
+        "PAYMENT",
+        "CREDENTIAL",
+        "IMPERSONATION",
+        "OTHER",
+        "UNCLASSIFIED"
+      ],
+      "title": "ClaimType",
+      "type": "string"
+    },
+    "ProvenanceMetadata": {
+      "properties": {
+        "source_type": {
+          "$ref": "#/$defs/ProvenanceSourceType"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "source_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Id"
+        },
+        "collection_method": {
+          "default": "manual",
+          "title": "Collection Method",
+          "type": "string"
+        },
+        "license": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "License"
+        },
+        "collection_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Collection Date"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceMetadata",
+      "type": "object"
+    },
+    "ProvenanceSourceType": {
+      "enum": [
+        "PUBLIC_DATASET",
+        "TRUSTLENS_ANNOTATED",
+        "SYNTHETIC",
+        "TRANSLATED",
+        "HUMAN_REVIEWED",
+        "LOCAL_DATA",
+        "USER_PROVIDED"
+      ],
+      "title": "ProvenanceSourceType",
+      "type": "string"
+    },
+    "ReviewStatus": {
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "FLAGGED_FOR_REVIEW"
+      ],
+      "title": "ReviewStatus",
+      "type": "string"
+    },
+    "SourceSpan": {
+      "properties": {
+        "start": {
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "title": "End",
+          "type": "integer"
+        },
+        "source_sentence": {
+          "title": "Source Sentence",
+          "type": "string"
+        },
+        "source_index": {
+          "title": "Source Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "source_sentence",
+        "source_index"
+      ],
+      "title": "SourceSpan",
+      "type": "object"
+    },
+    "SplitMetadata": {
+      "properties": {
+        "split": {
+          "$ref": "#/$defs/SplitName"
+        },
+        "source_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Group Id"
+        },
+        "campaign_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Campaign Group Id"
+        },
+        "post_family_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Post Family Id"
+        },
+        "image_family_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Family Id"
+        },
+        "translation_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translation Group Id"
+        }
+      },
+      "required": [
+        "split"
+      ],
+      "title": "SplitMetadata",
+      "type": "object"
+    },
+    "SplitName": {
+      "enum": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "title": "SplitName",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "claim_id": {
+      "title": "Claim Id",
+      "type": "string"
+    },
+    "post_id": {
+      "title": "Post Id",
+      "type": "string"
+    },
+    "claim_text": {
+      "title": "Claim Text",
+      "type": "string"
+    },
+    "claim_type": {
+      "$ref": "#/$defs/ClaimType",
+      "default": "UNCLASSIFIED"
+    },
+    "detection_label": {
+      "$ref": "#/$defs/ClaimDetectionLabel",
+      "default": "CLAIM"
+    },
+    "claim_status": {
+      "default": "ACTIVE",
+      "title": "Claim Status",
+      "type": "string"
+    },
+    "check_worthiness": {
+      "default": 1.0,
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Check Worthiness",
+      "type": "number"
+    },
+    "source_span": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SourceSpan"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "language": {
+      "default": "en",
+      "title": "Language",
+      "type": "string"
+    },
+    "script": {
+      "default": "Latin",
+      "title": "Script",
+      "type": "string"
+    },
+    "attribution": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Attribution"
+    },
+    "modality": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Modality"
+    },
+    "provenance": {
+      "$ref": "#/$defs/ProvenanceMetadata"
+    },
+    "split_info": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SplitMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "annotation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AnnotationMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "is_example": {
+      "default": false,
+      "title": "Is Example",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "post_id",
+    "claim_text",
+    "provenance"
+  ],
+  "title": "TrainingClaim",
+  "type": "object"
+}

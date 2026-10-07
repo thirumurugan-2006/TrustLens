@@ -1,0 +1,12 @@
+{
+    "subject_f1": 1.0,
+    "predicate_f1": 1.0,
+    "object_f1": 1.0,
+    "relationship_f1": 1.0,
+    "numerical_accuracy": 1.0,
+    "currency_accuracy": 1.0,
+    "temporal_accuracy": 1.0,
+    "negation_accuracy": 1.0,
+    "condition_accuracy": 1.0,
+    "attribution_accuracy": 1.0
+}

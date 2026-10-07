@@ -1,5 +1,5 @@
 from app.input.schemas import NormalizedPost
 def normalize_post(post: NormalizedPost):
-    if post.text: post.text=" ".join(post.text.split())
-    if post.title: post.title=" ".join(post.title.split())
+    if post.content.text: post.content.text=" ".join(post.content.text.split())
+    if post.content.title: post.content.title=" ".join(post.content.title.split())
     return post

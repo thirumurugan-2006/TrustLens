@@ -1,0 +1,47 @@
+{
+    "post_id": "screenshot_ed111ad7bf68",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Screenshot text",
+    "images": [
+        "data/raw/screenshots/screenshot_ed111ad7bf68.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T05:00:04.254694+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.95,
+        "ocr_quality": "high",
+        "ocr_warning": false,
+        "quality_score": 0.95,
+        "quality_level": "high",
+        "language_analysis": {
+            "primary_language": "en",
+            "language_confidence": 1.0,
+            "secondary_languages": [],
+            "scripts": [
+                "Latin"
+            ],
+            "script_distribution": {
+                "Latin": 1.0,
+                "Tamil": 0.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect"
+        },
+        "image_format": "PNG",
+        "image_width": 120,
+        "image_height": 60,
+        "image_size_bytes": 215
+    }
+}

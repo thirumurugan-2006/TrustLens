@@ -1,0 +1,38 @@
+{
+    "English": {
+        "samples": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+    },
+    "Tamil": {
+        "samples": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+    },
+    "Hindi": {
+        "samples": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+    },
+    "Tamil-English": {
+        "samples": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+    },
+    "Tanglish": {
+        "samples": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+    },
+    "Hinglish": {
+        "samples": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+    }
+}

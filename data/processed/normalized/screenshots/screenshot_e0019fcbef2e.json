@@ -1,0 +1,78 @@
+{
+    "post_id": "screenshot_e0019fcbef2e",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Congratulations! Pay registration fee.",
+    "images": [
+        "data/raw/screenshots/screenshot_e0019fcbef2e.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T07:03:07.195769+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_status": "SUCCESS",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_confidence": 0.8500000000000001,
+        "ocr_quality": "high",
+        "ocr_warning": false,
+        "ocr_unreliable": false,
+        "ocr_attempts": 1,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_detection_count": 2,
+        "ocr_text_length": 38,
+        "ocr_script_distribution": {
+            "Latin": 1.0,
+            "Tamil": 0.0,
+            "Devanagari": 0.0,
+            "Arabic": 0.0,
+            "Unknown": 0.0
+        },
+        "ocr_selection_score": 0.877,
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "confidence": 0.8500000000000001,
+                "usable": true,
+                "selection_score": 0.877
+            }
+        ],
+        "quality_score": 0.8500000000000001,
+        "quality_level": "high",
+        "language_analysis": {
+            "primary_language": "en",
+            "language_confidence": 1.0,
+            "secondary_languages": [],
+            "scripts": [
+                "Latin"
+            ],
+            "script_distribution": {
+                "Latin": 1.0,
+                "Tamil": 0.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 200,
+        "image_height": 80,
+        "image_size_bytes": 288
+    }
+}

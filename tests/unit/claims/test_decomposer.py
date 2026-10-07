@@ -55,9 +55,9 @@ def test_conditional_financial(decomposer):
     claim = make_claim("If you invest ₹5,000 today, you will receive ₹50,000 within 30 days.", meta={"numbers": ["5000", "50000"]})
     res = decomposer.decompose(claim)
     assert len(res.atomic_claims) == 2
-    assert res.atomic_claims[0].predicate == "invest"
+    assert res.atomic_claims[0].predicate == "invests"
     assert res.atomic_claims[0].value == "5000"
-    assert res.atomic_claims[1].predicate == "receive"
+    assert res.atomic_claims[1].predicate == "receives"
     assert res.atomic_claims[1].value == "50000"
 
 def test_negation(decomposer):

@@ -1,0 +1,29 @@
+{
+    "post_id": "screenshot_d785de5e6037",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "usable text",
+    "images": [
+        "data/raw/screenshots/screenshot_d785de5e6037.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T04:47:03.501645+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.73,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "quality_score": 0.73,
+        "quality_level": "medium",
+        "image_format": "PNG",
+        "image_width": 300,
+        "image_height": 300,
+        "image_size_bytes": 911,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    }
+}

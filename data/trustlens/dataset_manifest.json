@@ -1,0 +1,109 @@
+{
+  "dataset_id": "trustlens_v0.2.0_dev",
+  "dataset_version": "v0.2.0",
+  "schema_version": "1.0.0",
+  "guideline_version": "1.0.0",
+  "created_at": "2026-10-07T07:25:11.802774+00:00",
+  "source_summary": "TrustLens multilingual multimodal scam-risk dataset",
+  "license": "Open Government Data License (OGDL) / CC-BY-4.0 / Research Permitted",
+  "record_count": 1560,
+  "total_records": 1560,
+  "train_count": 1092,
+  "validation_count": 234,
+  "test_count": 234,
+  "language_distribution": {
+    "en": 400,
+    "ta": 300,
+    "hi": 340,
+    "ta-en": 220,
+    "hi-en": 300
+  },
+  "claim_distribution": {
+    "FINANCIAL": 240,
+    "JOB": 120,
+    "SHOPPING": 120,
+    "GIVEAWAY": 120,
+    "PAYMENT": 120,
+    "CREDENTIAL": 120,
+    "IMPERSONATION": 120,
+    "OTHER": 600
+  },
+  "risk_distribution": {
+    "HIGH": 990,
+    "LOW": 180,
+    "INSUFFICIENT": 150,
+    "MEDIUM": 240
+  },
+  "evidence_distribution": {
+    "CONTRADICTS": 1020,
+    "SUPPORTS": 180,
+    "INSUFFICIENT": 180,
+    "NEUTRAL": 180
+  },
+  "category_distribution": {
+    "FINANCIAL": 180,
+    "JOB": 180,
+    "SHOPPING": 174,
+    "GIVEAWAY": 150,
+    "PAYMENT": 174,
+    "CREDENTIAL": 150,
+    "IMPERSONATION": 150,
+    "OTHER": 162,
+    "LEGITIMATE": 120,
+    "INSUFFICIENT": 120
+  },
+  "source_distribution": {
+    "PUBLIC_DATASET": 1380,
+    "LOCAL_DATA": 180
+  },
+  "synthetic_count": 0,
+  "real_count": 1560,
+  "duplicate_count": 1505,
+  "rejected_count": 0,
+  "cluster_count": 260,
+  "annotation_count": 1560,
+  "double_annotated_count": 262,
+  "adjudicated_count": 262,
+  "label_distribution": {
+    "risk_HIGH": 990,
+    "risk_LOW": 180,
+    "risk_INSUFFICIENT": 150,
+    "risk_MEDIUM": 240,
+    "claim_FINANCIAL": 240,
+    "claim_JOB": 120,
+    "claim_SHOPPING": 120,
+    "claim_GIVEAWAY": 120,
+    "claim_PAYMENT": 120,
+    "claim_CREDENTIAL": 120,
+    "claim_IMPERSONATION": 120,
+    "claim_OTHER": 600
+  },
+  "splits_distribution": {
+    "train": 1092,
+    "validation": 234,
+    "test": 234
+  },
+  "leakage_group_counts": {
+    "campaign": 1320,
+    "translation": 1560
+  },
+  "domain_distribution": {
+    "FINANCIAL": 180,
+    "JOB": 180,
+    "SHOPPING": 174,
+    "GIVEAWAY": 150,
+    "PAYMENT": 174,
+    "CREDENTIAL": 150,
+    "IMPERSONATION": 150,
+    "OTHER": 162,
+    "LEGITIMATE": 120,
+    "INSUFFICIENT": 120
+  },
+  "parent_version": "v0.1.0",
+  "medium_count": 240,
+  "neutral_count": 180,
+  "synthetic_test_count": 0,
+  "new_records": 360,
+  "removed_records": 0,
+  "modified_records": 0
+}

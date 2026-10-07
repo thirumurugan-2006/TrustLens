@@ -1,0 +1,800 @@
+{
+  "$defs": {
+    "AcquisitionMethod": {
+      "enum": [
+        "reddit_api",
+        "official_api",
+        "uploaded",
+        "screenshot",
+        "copied_text",
+        "local_dataset",
+        "local_cache",
+        "manual",
+        "unknown"
+      ],
+      "title": "AcquisitionMethod",
+      "type": "string"
+    },
+    "AuthorInfo": {
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Id"
+        },
+        "username": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Username"
+        },
+        "display_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Display Name"
+        },
+        "verified": {
+          "default": false,
+          "title": "Verified",
+          "type": "boolean"
+        }
+      },
+      "title": "AuthorInfo",
+      "type": "object"
+    },
+    "ImageMetadata": {
+      "properties": {
+        "image_id": {
+          "title": "Image Id",
+          "type": "string"
+        },
+        "image_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Path"
+        },
+        "image_hash": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Hash"
+        },
+        "ocr_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ocr Text"
+        },
+        "ocr_language": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ocr Language"
+        },
+        "ocr_confidence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ocr Confidence"
+        },
+        "ocr_engine": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ocr Engine"
+        },
+        "image_quality": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Quality"
+        },
+        "image_provenance": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Provenance"
+        }
+      },
+      "title": "ImageMetadata",
+      "type": "object"
+    },
+    "LanguageMetadata": {
+      "properties": {
+        "primary": {
+          "default": "en",
+          "title": "Primary",
+          "type": "string"
+        },
+        "languages": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Languages",
+          "type": "array"
+        },
+        "script": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Script",
+          "type": "array"
+        },
+        "code_mixed": {
+          "default": false,
+          "title": "Code Mixed",
+          "type": "boolean"
+        },
+        "transliterated": {
+          "default": false,
+          "title": "Transliterated",
+          "type": "boolean"
+        },
+        "normalized_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Text"
+        },
+        "original_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Text"
+        }
+      },
+      "title": "LanguageMetadata",
+      "type": "object"
+    },
+    "Platform": {
+      "enum": [
+        "reddit",
+        "youtube",
+        "x",
+        "instagram",
+        "facebook",
+        "linkedin",
+        "tiktok",
+        "telegram",
+        "whatsapp",
+        "generic",
+        "text",
+        "screenshot",
+        "unknown"
+      ],
+      "title": "Platform",
+      "type": "string"
+    },
+    "PostContent": {
+      "properties": {
+        "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Title"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "hashtags": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Hashtags",
+          "type": "array"
+        },
+        "mentions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mentions",
+          "type": "array"
+        },
+        "urls": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Urls",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "PostContent",
+      "type": "object"
+    },
+    "PostMedia": {
+      "properties": {
+        "images": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Images",
+          "type": "array"
+        },
+        "videos": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Videos",
+          "type": "array"
+        },
+        "audio": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Audio",
+          "type": "array"
+        }
+      },
+      "title": "PostMedia",
+      "type": "object"
+    },
+    "PostType": {
+      "enum": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "image_text",
+        "video_text",
+        "audio_text",
+        "carousel",
+        "link",
+        "poll",
+        "thread",
+        "comment",
+        "reply",
+        "unknown"
+      ],
+      "title": "PostType",
+      "type": "string"
+    },
+    "ProvenanceMetadata": {
+      "properties": {
+        "source_type": {
+          "$ref": "#/$defs/ProvenanceSourceType"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "source_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Id"
+        },
+        "collection_method": {
+          "default": "manual",
+          "title": "Collection Method",
+          "type": "string"
+        },
+        "license": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "License"
+        },
+        "collection_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Collection Date"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceMetadata",
+      "type": "object"
+    },
+    "ProvenanceSourceType": {
+      "enum": [
+        "PUBLIC_DATASET",
+        "TRUSTLENS_ANNOTATED",
+        "SYNTHETIC",
+        "TRANSLATED",
+        "HUMAN_REVIEWED",
+        "LOCAL_DATA",
+        "USER_PROVIDED"
+      ],
+      "title": "ProvenanceSourceType",
+      "type": "string"
+    },
+    "SocialComment": {
+      "properties": {
+        "comment_id": {
+          "title": "Comment Id",
+          "type": "string"
+        },
+        "author": {
+          "$ref": "#/$defs/AuthorInfo"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "timestamp": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Timestamp"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent Id"
+        },
+        "replies": {
+          "items": {
+            "$ref": "#/$defs/SocialComment"
+          },
+          "title": "Replies",
+          "type": "array"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        }
+      },
+      "required": [
+        "comment_id",
+        "author",
+        "text"
+      ],
+      "title": "SocialComment",
+      "type": "object"
+    },
+    "SplitMetadata": {
+      "properties": {
+        "split": {
+          "$ref": "#/$defs/SplitName"
+        },
+        "source_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Group Id"
+        },
+        "campaign_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Campaign Group Id"
+        },
+        "post_family_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Post Family Id"
+        },
+        "image_family_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Family Id"
+        },
+        "translation_group_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translation Group Id"
+        }
+      },
+      "required": [
+        "split"
+      ],
+      "title": "SplitMetadata",
+      "type": "object"
+    },
+    "SplitName": {
+      "enum": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "title": "SplitName",
+      "type": "string"
+    },
+    "UniversalSocialPost": {
+      "properties": {
+        "post_id": {
+          "title": "Post Id",
+          "type": "string"
+        },
+        "platform": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Platform"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Platform"
+        },
+        "post_type": {
+          "$ref": "#/$defs/PostType",
+          "default": "text"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        },
+        "author": {
+          "$ref": "#/$defs/AuthorInfo"
+        },
+        "content": {
+          "$ref": "#/$defs/PostContent"
+        },
+        "media": {
+          "$ref": "#/$defs/PostMedia"
+        },
+        "comments": {
+          "items": {
+            "$ref": "#/$defs/SocialComment"
+          },
+          "title": "Comments",
+          "type": "array"
+        },
+        "replies": {
+          "items": {
+            "$ref": "#/$defs/SocialComment"
+          },
+          "title": "Replies",
+          "type": "array"
+        },
+        "quoted_content": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UniversalSocialPost"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "reposted_content": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UniversalSocialPost"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "timestamp": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Timestamp"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        },
+        "acquisition": {
+          "$ref": "#/$defs/AcquisitionMethod",
+          "default": "unknown"
+        }
+      },
+      "required": [
+        "post_id",
+        "platform"
+      ],
+      "title": "UniversalSocialPost",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "post_id": {
+      "title": "Post Id",
+      "type": "string"
+    },
+    "platform": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Platform"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "Platform"
+    },
+    "post_type": {
+      "$ref": "#/$defs/PostType",
+      "default": "text"
+    },
+    "source_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Url"
+    },
+    "author": {
+      "$ref": "#/$defs/AuthorInfo"
+    },
+    "content": {
+      "$ref": "#/$defs/PostContent"
+    },
+    "media": {
+      "$ref": "#/$defs/PostMedia"
+    },
+    "comments": {
+      "items": {
+        "$ref": "#/$defs/SocialComment"
+      },
+      "title": "Comments",
+      "type": "array"
+    },
+    "replies": {
+      "items": {
+        "$ref": "#/$defs/SocialComment"
+      },
+      "title": "Replies",
+      "type": "array"
+    },
+    "quoted_content": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/UniversalSocialPost"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "reposted_content": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/UniversalSocialPost"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "timestamp": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Timestamp"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    },
+    "acquisition": {
+      "$ref": "#/$defs/AcquisitionMethod",
+      "default": "unknown"
+    },
+    "language_info": {
+      "$ref": "#/$defs/LanguageMetadata"
+    },
+    "provenance": {
+      "$ref": "#/$defs/ProvenanceMetadata"
+    },
+    "split_info": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SplitMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "images_meta": {
+      "items": {
+        "$ref": "#/$defs/ImageMetadata"
+      },
+      "title": "Images Meta",
+      "type": "array"
+    },
+    "is_example": {
+      "default": false,
+      "title": "Is Example",
+      "type": "boolean"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "post_id",
+    "platform",
+    "provenance"
+  ],
+  "title": "TrainingPost",
+  "type": "object"
+}

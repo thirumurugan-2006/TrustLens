@@ -1,8 +1,8 @@
-﻿from pathlib import Path
+from pathlib import Path
 
 from PIL import Image
 
-from app.input.schemas import NormalizedPost
+from app.input.schemas import NormalizedPost, Platform, PostType, PostContent
 from app.validation.image_validator import validate_image
 from app.validation.post_validator import validate_post
 from app.validation.quality_checker import check_ocr_quality
@@ -70,8 +70,9 @@ def test_reddit_url_validation():
 def test_normalized_post_validation():
     post = NormalizedPost(
         post_id="text_input",
-        platform="text",
-        text="usable text",
+        platform=Platform.generic,
+        post_type=PostType.text,
+        content=PostContent(text="usable text"),
         timestamp="2026-10-05T00:00:00+00:00",
     )
     assert validate_post(post).valid

@@ -1,0 +1,88 @@
+{
+    "post_id": "screenshot_6b8974de37e0",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "தமிழ் முதலீடு",
+    "images": [
+        "data/raw/screenshots/screenshot_6b8974de37e0.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T06:42:41.695737+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_confidence": 0.72,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "ocr_unreliable": false,
+        "ocr_attempts": 2,
+        "ocr_selected_language_mode": [
+            "ta"
+        ],
+        "ocr_detection_count": 1,
+        "ocr_text_length": 13,
+        "ocr_script_distribution": {
+            "Latin": 0.0,
+            "Tamil": 1.0,
+            "Devanagari": 0.0,
+            "Arabic": 0.0,
+            "Unknown": 0.0
+        },
+        "ocr_selection_score": 0.712,
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "confidence": 0.265,
+                "usable": false,
+                "selection_score": 0.4965
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "confidence": 0.72,
+                "usable": true,
+                "selection_score": 0.712
+            }
+        ],
+        "quality_score": 0.72,
+        "quality_level": "medium",
+        "language_analysis": {
+            "primary_language": "ta",
+            "language_confidence": 1.0,
+            "secondary_languages": [],
+            "scripts": [
+                "Tamil"
+            ],
+            "script_distribution": {
+                "Latin": 0.0,
+                "Tamil": 1.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 300,
+        "image_height": 300,
+        "image_size_bytes": 911,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "post_id": "screenshot_af774a7ed012",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "565469555555465555546555554655556 Investmentplan EEEEEES,OOO EEEEELE",
+    "images": [
+        "data/raw/screenshots/screenshot_af774a7ed012.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T15:00:16.914555+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "1.7.2",
+        "ocr_status": "LOW_CONFIDENCE",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "565469555555465555546555554655556 Investmentplan EEEEEES,OOO EEEEELE",
+        "ocr_normalized_text": "565469555555465555546555554655556 Investmentplan EEEEEES,OOO EEEEELE",
+        "ocr_confidence": 0.30556526098948494,
+        "ocr_quality": "low",
+        "ocr_warning": true,
+        "ocr_unreliable": true,
+        "ocr_attempts": 2,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_selected_preprocessing": "original",
+        "ocr_selection_score": 0.5825,
+        "ocr_detection_count": 3,
+        "ocr_text_length": 68,
+        "ocr_script_distribution": {
+            "Tamil": 0.0,
+            "Latin": 1.0,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.30556526098948494,
+                "detection_count": 3,
+                "text_length": 68,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.5825,
+                "usable": false,
+                "warnings": [
+                    "confidence_below_gate:0.306"
+                ],
+                "backend": "easyocr_en"
+            },
+            {
+                "language_mode": [
+                    "ta"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.8152597099542618,
+                "detection_count": 4,
+                "text_length": 75,
+                "tamil_ratio": 0.0,
+                "latin_ratio": 1.0,
+                "selection_score": 0.5769,
+                "usable": false,
+                "warnings": [
+                    "tamil_ocr_no_tamil_chars"
+                ],
+                "backend": "paddleocr_ta"
+            }
+        ],
+        "quality_score": 0.30556526098948494,
+        "quality_level": "low",
+        "language_analysis": {
+            "primary_language": "unknown",
+            "language_confidence": 0.0,
+            "secondary_languages": [],
+            "scripts": [],
+            "script_distribution": {},
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": false
+        },
+        "image_format": "PNG",
+        "image_width": 600,
+        "image_height": 300,
+        "image_size_bytes": 3146,
+        "ocr_warnings": [
+            "OCR confidence is low."
+        ]
+    }
+}

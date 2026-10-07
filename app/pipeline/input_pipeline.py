@@ -1,6 +1,7 @@
 from app.input.pipeline import InputRouter
 from app.input.schemas import NormalizedPost
 from app.preprocessing.language.language_analyzer import LanguageAnalyzer
+from app.validation.image_validator import validate_image
 from app.validation.post_validator import validate_post
 from app.validation.text_validator import validate_text
 from app.validation.url_validator import validate_reddit_url, validate_platform_url
@@ -28,7 +29,7 @@ class InputPipeline:
         elif input_type == "platform_url":
             validation = validate_platform_url(value)
         elif input_type == "screenshot":
-            validation = None
+            validation = validate_image(value)
         else:
             raise ValueError(f"Unsupported input type: {input_type}")
 
@@ -37,7 +38,7 @@ class InputPipeline:
 
         post = self.router.route(input_type, value)
         if "language_analysis" not in post.metadata:
-            post.metadata["language_analysis"] = self.language_analyzer.analyze(post.text or "")
+            post.metadata["language_analysis"] = self.language_analyzer.analyze(post.content.text or "")
 
         post_validation = validate_post(post)
         if not post_validation.valid:

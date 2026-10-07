@@ -1,0 +1,69 @@
+{
+    "post_id": "screenshot_6b10e2c75172",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "Congratulationsl You have been selected for a work-from-home job. Earn ,000 every month: registration fee. Pay",
+    "images": [
+        "data/raw/screenshots/screenshot_6b10e2c75172.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T05:59:03.323434+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_confidence": 0.7329020023530634,
+        "ocr_quality": "medium",
+        "ocr_warning": true,
+        "ocr_unreliable": false,
+        "ocr_attempts": 1,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_detection_count": 5,
+        "ocr_text_length": 110,
+        "ocr_script_distribution": {
+            "Latin": 1.0,
+            "Tamil": 0.0,
+            "Devanagari": 0.0,
+            "Arabic": 0.0,
+            "Unknown": 0.0
+        },
+        "quality_score": 0.7329020023530634,
+        "quality_level": "medium",
+        "language_analysis": {
+            "primary_language": "en",
+            "language_confidence": 1.0,
+            "secondary_languages": [],
+            "scripts": [
+                "Latin"
+            ],
+            "script_distribution": {
+                "Latin": 1.0,
+                "Tamil": 0.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 1400,
+        "image_height": 320,
+        "image_size_bytes": 19489,
+        "ocr_warnings": [
+            "OCR confidence is moderate."
+        ]
+    }
+}

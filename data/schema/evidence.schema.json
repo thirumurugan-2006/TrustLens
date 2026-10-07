@@ -1,0 +1,266 @@
+{
+  "$defs": {
+    "AnnotationConfidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ],
+      "title": "AnnotationConfidence",
+      "type": "string"
+    },
+    "AnnotationMetadata": {
+      "properties": {
+        "annotation_id": {
+          "title": "Annotation Id",
+          "type": "string"
+        },
+        "annotator_id": {
+          "title": "Annotator Id",
+          "type": "string"
+        },
+        "annotation_timestamp": {
+          "title": "Annotation Timestamp",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "guideline_version": {
+          "default": "1.0.0",
+          "title": "Guideline Version",
+          "type": "string"
+        },
+        "review_status": {
+          "$ref": "#/$defs/ReviewStatus",
+          "default": "APPROVED"
+        },
+        "confidence": {
+          "$ref": "#/$defs/AnnotationConfidence",
+          "default": "HIGH"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "annotator_id"
+      ],
+      "title": "AnnotationMetadata",
+      "type": "object"
+    },
+    "EvidenceRelationLabel": {
+      "enum": [
+        "SUPPORTS",
+        "CONTRADICTS",
+        "NEUTRAL",
+        "INSUFFICIENT"
+      ],
+      "title": "EvidenceRelationLabel",
+      "type": "string"
+    },
+    "ProvenanceMetadata": {
+      "properties": {
+        "source_type": {
+          "$ref": "#/$defs/ProvenanceSourceType"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "source_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Id"
+        },
+        "collection_method": {
+          "default": "manual",
+          "title": "Collection Method",
+          "type": "string"
+        },
+        "license": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "License"
+        },
+        "collection_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Collection Date"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceMetadata",
+      "type": "object"
+    },
+    "ProvenanceSourceType": {
+      "enum": [
+        "PUBLIC_DATASET",
+        "TRUSTLENS_ANNOTATED",
+        "SYNTHETIC",
+        "TRANSLATED",
+        "HUMAN_REVIEWED",
+        "LOCAL_DATA",
+        "USER_PROVIDED"
+      ],
+      "title": "ProvenanceSourceType",
+      "type": "string"
+    },
+    "ReviewStatus": {
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "FLAGGED_FOR_REVIEW"
+      ],
+      "title": "ReviewStatus",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "evidence_id": {
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "claim_id": {
+      "title": "Claim Id",
+      "type": "string"
+    },
+    "evidence_text": {
+      "title": "Evidence Text",
+      "type": "string"
+    },
+    "source_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Url"
+    },
+    "source_type": {
+      "default": "WEB_DOCUMENT",
+      "title": "Source Type",
+      "type": "string"
+    },
+    "source_title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Title"
+    },
+    "retrieval_method": {
+      "default": "bm25_dense",
+      "title": "Retrieval Method",
+      "type": "string"
+    },
+    "retrieval_query_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Retrieval Query Id"
+    },
+    "source_timestamp": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Timestamp"
+    },
+    "language": {
+      "default": "en",
+      "title": "Language",
+      "type": "string"
+    },
+    "relation_label": {
+      "$ref": "#/$defs/EvidenceRelationLabel"
+    },
+    "provenance": {
+      "$ref": "#/$defs/ProvenanceMetadata"
+    },
+    "reliability_metadata": {
+      "additionalProperties": true,
+      "title": "Reliability Metadata",
+      "type": "object"
+    },
+    "annotation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AnnotationMetadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "is_example": {
+      "default": false,
+      "title": "Is Example",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "claim_id",
+    "evidence_text",
+    "relation_label",
+    "provenance"
+  ],
+  "title": "TrainingEvidence",
+  "type": "object"
+}

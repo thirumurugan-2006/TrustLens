@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 
 from PIL import Image, UnidentifiedImageError
 
@@ -37,7 +37,7 @@ def validate_image(image_path: str | Path) -> ValidationResult:
     return ValidationResult(
         valid=True,
         warnings=warnings,
-        quality_score=1.0 if not warnings else 0.75,
+        quality_score=1.0 if not warnings else 0.5,
         quality_level="high" if not warnings else "medium",
     )
 

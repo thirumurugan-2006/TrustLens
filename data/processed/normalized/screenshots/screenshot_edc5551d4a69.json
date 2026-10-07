@@ -1,0 +1,50 @@
+{
+    "post_id": "screenshot_edc5551d4a69",
+    "platform": "screenshot",
+    "source_url": null,
+    "author": null,
+    "title": null,
+    "text": "DMaraee Debu k Tama CH4ReICEbete BHEL F65 Cr Investment: 714Cr",
+    "images": [
+        "data/raw/screenshots/screenshot_edc5551d4a69.png"
+    ],
+    "comments": [],
+    "timestamp": "2026-10-05T05:01:38.911028+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr",
+        "ocr_confidence": 0.5579532975407465,
+        "ocr_quality": "low",
+        "ocr_warning": true,
+        "quality_score": 0.5579532975407465,
+        "quality_level": "low",
+        "language_analysis": {
+            "primary_language": "en",
+            "language_confidence": 0.5714,
+            "secondary_languages": [],
+            "scripts": [
+                "Latin"
+            ],
+            "script_distribution": {
+                "Latin": 1.0,
+                "Tamil": 0.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "langdetect"
+        },
+        "image_format": "PNG",
+        "image_width": 201,
+        "image_height": 251,
+        "image_size_bytes": 3955,
+        "ocr_warnings": [
+            "OCR confidence is low."
+        ]
+    }
+}

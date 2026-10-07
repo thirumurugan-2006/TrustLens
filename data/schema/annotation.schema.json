@@ -1,0 +1,72 @@
+{
+  "$defs": {
+    "AnnotationConfidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ],
+      "title": "AnnotationConfidence",
+      "type": "string"
+    },
+    "ReviewStatus": {
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "FLAGGED_FOR_REVIEW"
+      ],
+      "title": "ReviewStatus",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "annotation_id": {
+      "title": "Annotation Id",
+      "type": "string"
+    },
+    "annotator_id": {
+      "title": "Annotator Id",
+      "type": "string"
+    },
+    "annotation_timestamp": {
+      "title": "Annotation Timestamp",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "guideline_version": {
+      "default": "1.0.0",
+      "title": "Guideline Version",
+      "type": "string"
+    },
+    "review_status": {
+      "$ref": "#/$defs/ReviewStatus",
+      "default": "APPROVED"
+    },
+    "confidence": {
+      "$ref": "#/$defs/AnnotationConfidence",
+      "default": "HIGH"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "annotator_id"
+  ],
+  "title": "AnnotationMetadata",
+  "type": "object"
+}

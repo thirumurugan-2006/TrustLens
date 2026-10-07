@@ -22,7 +22,7 @@ class RuleBasedQuerySynthesizer:
 
     def _build_queries(self, atomic_claim: AtomicClaim) -> List[SearchQuery]:
         queries = []
-        text = atomic_claim.text
+        text = atomic_claim.original_text
         claim_type = atomic_claim.claim_type
         
         if not atomic_claim.verifiable and claim_type != "QUESTION":

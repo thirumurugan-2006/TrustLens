@@ -1,0 +1,104 @@
+{
+    "post_id": "screenshot_db3714a60b5f",
+    "platform": "generic",
+    "post_type": "image_text",
+    "source_url": null,
+    "author": {
+        "id": null,
+        "username": null,
+        "display_name": null,
+        "verified": false
+    },
+    "content": {
+        "title": null,
+        "text": "உங்கள் முதல் சம்பளம்",
+        "hashtags": [],
+        "mentions": [],
+        "urls": []
+    },
+    "media": {
+        "images": [
+            "data/raw/screenshots/screenshot_db3714a60b5f.png"
+        ],
+        "videos": [],
+        "audio": []
+    },
+    "comments": [],
+    "replies": [],
+    "quoted_content": null,
+    "reposted_content": null,
+    "timestamp": "2026-10-07T05:19:49.608604+00:00",
+    "metadata": {
+        "source_type": "screenshot",
+        "ocr_engine": "easyocr_en+paddleocr_ta",
+        "ocr_version": "not_installed",
+        "ocr_status": "SUCCESS",
+        "ocr_languages": [
+            "en",
+            "ta"
+        ],
+        "ocr_raw_text": "உங்கள் முதல் சம்பளம்",
+        "ocr_normalized_text": "உங்கள் முதல் சம்பளம்",
+        "ocr_confidence": 0.86,
+        "ocr_quality": "high",
+        "ocr_warning": false,
+        "ocr_unreliable": false,
+        "ocr_attempts": 1,
+        "ocr_selected_language_mode": [
+            "en"
+        ],
+        "ocr_selected_preprocessing": "original",
+        "ocr_selection_score": 0.462,
+        "ocr_detection_count": 1,
+        "ocr_text_length": 20,
+        "ocr_script_distribution": {
+            "Tamil": 1.0,
+            "Latin": 0.0,
+            "Other": 0.0
+        },
+        "ocr_candidates": [
+            {
+                "language_mode": [
+                    "en"
+                ],
+                "preprocessing": "original",
+                "confidence": 0.86,
+                "detection_count": 1,
+                "text_length": 20,
+                "tamil_ratio": 1.0,
+                "latin_ratio": 0.0,
+                "selection_score": 0.462,
+                "usable": true
+            }
+        ],
+        "quality_score": 0.86,
+        "quality_level": "high",
+        "language_analysis": {
+            "primary_language": "ta",
+            "language_confidence": 0.99,
+            "secondary_languages": [],
+            "scripts": [
+                "Tamil"
+            ],
+            "script_distribution": {
+                "Latin": 0.0,
+                "Tamil": 1.0,
+                "Devanagari": 0.0,
+                "Arabic": 0.0,
+                "Unknown": 0.0
+            },
+            "is_code_mixed": false,
+            "code_mix_confidence": 0.0,
+            "transliteration_candidate": false,
+            "transliteration_language": null,
+            "transliteration_confidence": 0.0,
+            "detector": "ensemble",
+            "language_analysis_reliable": true
+        },
+        "image_format": "PNG",
+        "image_width": 300,
+        "image_height": 300,
+        "image_size_bytes": 909
+    },
+    "acquisition": "screenshot"
+}
